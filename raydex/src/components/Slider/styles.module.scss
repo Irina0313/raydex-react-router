@@ -1,0 +1,35 @@
+.slideWrapper {
+  padding: 0 25px;
+  height: 500px;
+}
+
+.rightSide {
+  width: 50%;
+}
+
+.leftSide {
+  width: 40%;
+}
+
+.title {
+  text-align: left;
+  color: rgb(102, 102, 102);
+  font-size: 1.5rem;
+}
+
+.code {
+  text-align: left;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description {
+  text-align: left;
+  color: rgb(102, 102, 102);
+  font-size: 1.2rem;
+}
+
+.buttonContainer {
+  padding-left: 32px;
+}

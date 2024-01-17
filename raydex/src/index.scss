@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  line-height: 1.5em;
+  white-space: wrap;
+}
+#root {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.ant-breadcrumb {
+  padding: 30px;
+}
+
+.ant-breadcrumb > ol > li {
+  padding: 10px 0;
+}
+.ant-breadcrumb > ol > li:hover {
+  cursor: pointer;
+}
+.wrapper {
+  padding: 0 50px;
+}
