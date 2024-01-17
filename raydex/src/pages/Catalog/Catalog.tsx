@@ -1,5 +1,3 @@
-"use client";
-
 import { Card, Flex, Layout } from "antd";
 
 import Link from "antd/es/typography/Link";
@@ -40,7 +38,7 @@ const siderStyle: React.CSSProperties = {
   backgroundColor: "#fff",
 };
 
-export const Catalog = () => {
+const Catalog = () => {
   const params = useParams();
   const location = useLocation();
   console.log("location", location.pathname, "params", params);
@@ -86,4 +84,5 @@ export const Catalog = () => {
     </Layout>
   );
 };
-/* <a href={`/catalog/${p.path}`}>{p.name}</a> */
+
+export default Catalog;

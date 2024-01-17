@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import { Layout } from "./components/Layout";
+import Catalog from "./pages/Catalog/Catalog";
 import * as pages from "./pages";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<pages.Company />} />
           <Route path="contacts" element={<pages.Contacts />} />
-          <Route path="catalog" element={<pages.Catalog />}>
+          <Route path="catalog" element={<Catalog />}>
             <Route path=":category" element={<pages.Category />} />
             <Route path=":category/:products" element={<pages.Products />} />
           </Route>
