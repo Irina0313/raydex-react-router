@@ -15,23 +15,23 @@ const formItemLayout = {
   },
 };
 
-const onFinishFailed = (errorInfo: any) => {
+const onFinishFailed = (errorInfo: unknown) => {
   console.log("Failed:", errorInfo);
 };
 
-type FieldType = {
+interface FieldType {
   company?: string;
   surname?: string;
   name?: string;
   middleName?: string;
   message?: string;
-};
+}
 
 const ContactForm = () => {
   const [form] = Form.useForm();
   const formAction = "../../../php/mail.php";
 
-  const onFinish = async (values: any) => {
+  const onFinish = async (values: unknown) => {
     console.log("Success:", values);
 
     // Update the form action dynamically

@@ -1,5 +1,5 @@
-import { ProductItemType } from "../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters";
-import { getProducts } from "./getProducts";
+import { ProductItemType } from '../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
+import { getProducts } from './getProducts';
 
 interface IGetProductByCodeProps {
   productsID: string;
@@ -12,5 +12,5 @@ export const getProductByCode = ({
   const { productsID, code } = props;
 
   const products = getProducts(productsID);
-  return products && products.find((p) => p.code === code);
+  return products?.find((p) => p.code === code);
 };

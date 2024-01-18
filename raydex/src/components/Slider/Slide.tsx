@@ -1,14 +1,14 @@
-import { ProductItemType } from "../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters";
-import { LinkButton } from "../LinkButton";
+import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
+import { LinkButton } from '../LinkButton';
 
-import { Flex, Typography } from "antd";
-import styles from "./styles.module.scss";
-import "./styles.scss";
-import { findPathByName } from "../../utils/getFullPath";
+import { Flex } from 'antd';
+import styles from './styles.module.scss';
+import './styles.scss';
+import { findPathByName } from '../../utils/getFullPath';
 
 export const Slide = (product: ProductItemType) => {
   const { name, code, sliderDescription, images } = product;
-  const url = findPathByName(name) || "#";
+  const url = findPathByName(name) || '#';
   return (
     <>
       <Flex justify="center" className={styles.slideWrapper}>

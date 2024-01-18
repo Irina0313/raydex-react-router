@@ -1,10 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
+import { Carousel } from 'antd';
+import { CarouselRef } from 'antd/es/carousel';
+import { useRef, useState } from 'react';
 
-import { Carousel } from "antd";
-import { CarouselRef } from "antd/es/carousel";
-import { useRef, useState } from "react";
-
-import style from "./style.module.scss";
+import style from './style.module.scss';
 
 const ImagesSlider: React.FC<{ images: string[]; imagePathPrefix: string }> = ({
   images,

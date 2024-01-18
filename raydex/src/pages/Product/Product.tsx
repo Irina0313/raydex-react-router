@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Tabs } from "antd";
-import { Link, useLocation, useParams } from "react-router-dom";
-import styles from "./styles.module.scss";
-import { getPage } from "../../utils/getPage";
-import ImagesSlider from "../../components/ImagesSlider";
+import { useState } from 'react';
+import { Tabs } from 'antd';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import styles from './styles.module.scss';
+import { getPage } from '../../utils/getPage';
+import ImagesSlider from '../../components/ImagesSlider';
 
 export const Product = () => {
   const params = useParams();
@@ -13,19 +13,19 @@ export const Product = () => {
 
   const productItem = product && getPage(product.toString());
 
-  const images = productItem && "images" in productItem && productItem?.images;
-  const tabs = productItem && "tabs" in productItem && productItem?.tabs;
+  const images = productItem && 'images' in productItem && productItem?.images;
+  const tabs = productItem && 'tabs' in productItem && productItem?.tabs;
 
-  const [activeTab, setActiveTab] = useState("Описание");
+  const [activeTab, setActiveTab] = useState('Описание');
 
   const getTabContent = (key: string) => {
     return (
       productItem &&
-      (key === "Описание" && "fullDescription" in productItem
+      (key === 'Описание' && 'fullDescription' in productItem
         ? productItem.fullDescription
-        : key === "Характеристики" && "fullCharacteristics" in productItem
+        : key === 'Характеристики' && 'fullCharacteristics' in productItem
           ? productItem.fullCharacteristics
-          : key === "Документы" && "docs" in productItem
+          : key === 'Документы' && 'docs' in productItem
             ? productItem.docs
             : null)
     );
@@ -40,7 +40,7 @@ export const Product = () => {
   };
 
   const prevPagePath = (): string => {
-    return path.split("/").slice(0, -1).join("/");
+    return path.split('/').slice(0, -1).join('/');
   };
 
   return (
@@ -53,23 +53,23 @@ export const Product = () => {
         </div>
         <div className={styles.shortDescription}>
           {productItem &&
-            "shortDescription" in productItem &&
+            'shortDescription' in productItem &&
             productItem.shortDescription}
           <Link
             className={styles.detailsLink}
             to="#description"
-            onClick={() => handleDetailsLinkClick("Описание")}
+            onClick={() => handleDetailsLinkClick('Описание')}
           >
             Подробности
           </Link>
           <h3>Характеристики</h3>
           {productItem &&
-            "characteristics" in productItem &&
+            'characteristics' in productItem &&
             productItem.characteristics}
           <Link
             className={styles.detailsLink}
             to="#characteristics"
-            onClick={() => handleDetailsLinkClick("Характеристики")}
+            onClick={() => handleDetailsLinkClick('Характеристики')}
           >
             Все характеристики
           </Link>

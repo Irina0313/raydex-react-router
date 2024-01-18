@@ -1,12 +1,12 @@
-import { Divider, Flex, Typography } from "antd";
+import { Flex, Typography } from 'antd';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export const usageDescription = (areaKey: string) => {
   return (
     <>
-      {areaKey === "nuclearIndustry" && (
-        <Flex vertical gap={12} style={{ textAlign: "left", padding: "10px" }}>
+      {areaKey === 'nuclearIndustry' && (
+        <Flex vertical gap={12} style={{ textAlign: 'left', padding: '10px' }}>
           <Typography.Paragraph>
             Атомная промышленность является передовой отраслью и представляет
             собой мощный комплекс из множества предприятий. Согласно "Правил
@@ -37,8 +37,8 @@ export const usageDescription = (areaKey: string) => {
           </Typography.Paragraph>
         </Flex>
       )}
-      {areaKey === "medicine" && (
-        <Flex vertical gap={12} style={{ textAlign: "left", padding: "10px" }}>
+      {areaKey === 'medicine' && (
+        <Flex vertical gap={12} style={{ textAlign: 'left', padding: '10px' }}>
           <Typography.Paragraph>
             Медицина шагнула далеко вперед и уже тяжело представить себе
             успешную диагностику и лечение многих заболеваний без
@@ -49,7 +49,7 @@ export const usageDescription = (areaKey: string) => {
             индивидуальный дозиметрический контроль специалистов, работающих с
             ИИИ.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Обеспечение радиационной безопасности персонала
           </Typography.Title>
           <Typography.Paragraph>
@@ -64,15 +64,15 @@ export const usageDescription = (areaKey: string) => {
             источников, относятся к персоналу группы Б.
           </Typography.Paragraph>
           <Typography.Paragraph>
-            Согласно{" "}
+            Согласно{' '}
             <Link to="http://docs.cntd.ru/document/902170553" target="_blank">
               «Норм радиационной безопасности НРБ-99/2009»
-            </Link>{" "}
+            </Link>{' '}
             в случае облучения персонала группы А в нормальных условиях
             эксплуатации источников излучения нормируются следующие
             дозиметрические величины:
           </Typography.Paragraph>
-          <div style={{ maxWidth: "1000px" }}>
+          <div style={{ maxWidth: '1000px' }}>
             <img src="./assets/usage/y2fivslo1r1o7r0beain6pvfl4tfit6q.webp"></img>
           </div>
 
@@ -81,7 +81,7 @@ export const usageDescription = (areaKey: string) => {
             облучения персонала группы Б, равны 1/4 соответствующих значений для
             персонала группы А.
           </Typography.Paragraph>
-          <Typography.Title level={2} style={{ margin: "0" }}>
+          <Typography.Title level={2} style={{ margin: '0' }}>
             Решение
           </Typography.Title>
           <Typography.Paragraph>
@@ -95,9 +95,9 @@ export const usageDescription = (areaKey: string) => {
           </Typography.Paragraph>
         </Flex>
       )}
-      {areaKey === "oilAndGasMiningIndustry" && (
-        <Flex vertical gap={12} style={{ textAlign: "left", padding: "10px" }}>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+      {areaKey === 'oilAndGasMiningIndustry' && (
+        <Flex vertical gap={12} style={{ textAlign: 'left', padding: '10px' }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Неразрушающий контроль в нефтегазовой отрасли
           </Typography.Title>
 
@@ -134,7 +134,7 @@ export const usageDescription = (areaKey: string) => {
             применяются закрытые источники на основе радионуклидов Селен-75,
             Иридий-192, Цезий-137, Кобальт-60 и др.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Радиационная опасность в горнодобывающей отрасли
           </Typography.Title>
           <Typography.Paragraph>
@@ -158,7 +158,7 @@ export const usageDescription = (areaKey: string) => {
             В урановых рудниках основным источником радиоактивной опасности
             являются радон и его дочерние продукты.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Основные виды радиационного контроля:
           </Typography.Title>
           <Typography.Paragraph>
@@ -178,8 +178,8 @@ export const usageDescription = (areaKey: string) => {
           </Typography.Paragraph>
         </Flex>
       )}
-      {areaKey === "industrialSafety" && (
-        <Flex vertical gap={12} style={{ textAlign: "left", padding: "10px" }}>
+      {areaKey === 'industrialSafety' && (
+        <Flex vertical gap={12} style={{ textAlign: 'left', padding: '10px' }}>
           <Typography.Paragraph>
             В различных отраслях промышленности и другой деятельности с каждым
             годом все более широко используются источники ионизирующего
@@ -196,7 +196,7 @@ export const usageDescription = (areaKey: string) => {
             <br />- проведение радиационного контроля на рабочих местах и в ходе
             технологического процесса.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Решение
           </Typography.Title>
 
@@ -222,7 +222,7 @@ export const usageDescription = (areaKey: string) => {
             <br />- Дозиметрического контроля на рабочих местах
           </Typography.Paragraph>
 
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Решение
           </Typography.Title>
 
@@ -231,8 +231,8 @@ export const usageDescription = (areaKey: string) => {
           </Typography.Paragraph>
         </Flex>
       )}
-      {areaKey === "emergencyResponse" && (
-        <Flex vertical gap={12} style={{ textAlign: "left", padding: "10px" }}>
+      {areaKey === 'emergencyResponse' && (
+        <Flex vertical gap={12} style={{ textAlign: 'left', padding: '10px' }}>
           <Typography.Paragraph>
             Радиационная безопасность является важной составляющей национальной
             безопасности любой страны.
@@ -259,7 +259,7 @@ export const usageDescription = (areaKey: string) => {
             обеспечение радиационной безопасности при проведении культурных,
             спортивных политических и других массовых мероприятий.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Решение
           </Typography.Title>
 
@@ -273,7 +273,7 @@ export const usageDescription = (areaKey: string) => {
             <br />- Идентификаторы радиоизотопов для проведения оперативной
             идентификации обнаруженных радиоактивных материалов.
           </Typography.Paragraph>
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Аварийное реагирование
           </Typography.Title>
           <Typography.Paragraph>
@@ -309,7 +309,7 @@ export const usageDescription = (areaKey: string) => {
             измерений с комплектом оборудования.
           </Typography.Paragraph>
 
-          <Typography.Title level={3} style={{ margin: "0" }}>
+          <Typography.Title level={3} style={{ margin: '0' }}>
             Современные возможности
           </Typography.Title>
           <Typography.Paragraph>

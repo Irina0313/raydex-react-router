@@ -9,9 +9,10 @@ export const Usage = () => {
   const params = useParams();
   const { area } = params;
   const [activeTab, setActiveTab] = useState(area || usageAreas[0].key);
+
   useEffect(() => {
     navigate(`/usage/${activeTab}`);
-  }, [activeTab]);
+  }, [activeTab, navigate]);
 
   const onChange = (key: string) => {
     setActiveTab(key);

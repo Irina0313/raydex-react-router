@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styles from "./style.module.scss";
+import { Link } from 'react-router-dom';
+import styles from './style.module.scss';
 
 interface ILinkButton {
   url: string;

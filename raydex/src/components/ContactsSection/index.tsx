@@ -10,9 +10,9 @@ export const ContactsSection = () => {
     setIsModalOpen(true);
   };
 
-  const handleOk = () => {
+  /*   const handleOk = () => {
     setIsModalOpen(false);
-  };
+  }; */
 
   const handleCancel = () => {
     setIsModalOpen(false);

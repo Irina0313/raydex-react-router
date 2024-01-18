@@ -1,9 +1,9 @@
-import { Flex, Typography } from "antd";
+import { Flex, Typography } from 'antd';
 
 export const AboutSection = () => {
   return (
-    <Flex vertical gap={15} style={{ textAlign: "left", padding: "0 50px" }}>
-      <Typography.Title level={2} style={{ margin: "0", fontWeight: "bold" }}>
+    <Flex vertical gap={15} style={{ textAlign: 'left', padding: '0 50px' }}>
+      <Typography.Title level={2} style={{ margin: '0', fontWeight: 'bold' }}>
         О компании
       </Typography.Title>
       <Typography.Paragraph>

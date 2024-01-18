@@ -1,3 +1,3 @@
 export const sliderItemsCodes = [
-  { productsID: "electronicDosimetrs", code: "ДКГ-PM1211" },
+  { productsID: 'electronicDosimetrs', code: 'ДКГ-PM1211' },
 ];

@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
-import ProductCard from "../../components/ProductCard";
-import { catalog } from "../../lib/catalog/catalog";
-import { getProducts } from "../../utils/getProducts";
+import { useParams } from 'react-router-dom';
+import ProductCard from '../../components/ProductCard';
+import { catalog } from '../../lib/catalog/catalog';
+import { getProducts } from '../../utils/getProducts';
 
 const wrapperStyle: React.CSSProperties = {
-  display: "flex",
-  gap: "20px",
+  display: 'flex',
+  gap: '20px',
 };
 
 export const Products = () => {

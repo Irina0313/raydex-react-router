@@ -1,1 +1,1 @@
-export * from "./UsageArea";
+export * from './UsageArea';

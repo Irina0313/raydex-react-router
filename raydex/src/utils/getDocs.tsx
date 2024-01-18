@@ -1,14 +1,14 @@
-import { FilePdfOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { FilePdfOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const handleDownload = async (path: string) => {
-  const fileName = path.split("/").slice(-1).join("");
+  const fileName = path.split('/').slice(-1).join('');
   const pdfPath = path;
 
   const response = await fetch(pdfPath);
   const blob = await response.blob();
 
-  const link = document.createElement("a");
+  const link = document.createElement('a');
   link.href = window.URL.createObjectURL(blob);
   link.download = fileName;
 
@@ -39,7 +39,7 @@ const getDocs = (params: getDocsProps) => {
           {promotionalMaterials.map((p) => (
             <div key={p}>
               <FilePdfOutlined
-                style={{ fontSize: "30px", color: "#2e69ad", margin: "10px" }}
+                style={{ fontSize: '30px', color: '#2e69ad', margin: '10px' }}
                 onClick={() => handleDownload(p)}
               />
               <span>Рекламная листовка</span>
@@ -52,22 +52,22 @@ const getDocs = (params: getDocsProps) => {
           <h2>Сертификаты:</h2>
           {certificates.map((p) => (
             <div key={p.title}>
-              {p.type === "doc" && (
+              {p.type === 'doc' && (
                 <>
                   <FilePdfOutlined
                     style={{
-                      fontSize: "30px",
-                      color: "#2e69ad",
-                      margin: "10px",
+                      fontSize: '30px',
+                      color: '#2e69ad',
+                      margin: '10px',
                     }}
                     onClick={() => handleDownload(p.path)}
                   />
                   <span>{p.title}</span>
                 </>
               )}
-              {p.type === "link" && (
+              {p.type === 'link' && (
                 <Link
-                  style={{ margin: "10px", lineHeight: "2.1rem" }}
+                  style={{ margin: '10px', lineHeight: '2.1rem' }}
                   to={p.path}
                 >
                   {p.title}

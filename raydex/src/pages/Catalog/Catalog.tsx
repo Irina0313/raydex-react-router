@@ -1,13 +1,13 @@
-import { Card, Flex, Layout } from "antd";
+import { Card, Flex, Layout } from 'antd';
 
-import Link from "antd/es/typography/Link";
-import { CatalogItemType, catalog } from "../../lib/catalog/catalog";
-import { getProducts } from "../../utils/getProducts";
-import { findPathByName } from "../../utils/getFullPath";
-import { Outlet, useLocation, useParams } from "react-router-dom";
-import Sider from "antd/es/layout/Sider";
-import { Content } from "antd/es/layout/layout";
-import CatalogNavigation from "../../components/CatalogNavigation";
+import Link from 'antd/es/typography/Link';
+import { CatalogItemType, catalog } from '../../lib/catalog/catalog';
+import { getProducts } from '../../utils/getProducts';
+import { findPathByName } from '../../utils/getFullPath';
+import { Outlet, useLocation, useParams } from 'react-router-dom';
+import Sider from 'antd/es/layout/Sider';
+import { Content } from 'antd/es/layout/layout';
+import CatalogNavigation from '../../components/CatalogNavigation';
 
 const { Meta } = Card;
 
@@ -16,32 +16,32 @@ const productsAmount = (subcategory: CatalogItemType[] | undefined) => {
     ? subcategory.flatMap((s) => getProducts(s.productsID)).length
     : 0;
 
-  let items = "товар";
+  let items = 'товар';
 
   const ends = {
-    ов: ["0", "5", "6", "7", "8", "9"],
-    а: ["2", "3", "4"],
+    ов: ['0', '5', '6', '7', '8', '9'],
+    а: ['2', '3', '4'],
   };
 
   if (ends.ов.includes(categories.toString().slice(-1))) {
-    items += "ов";
+    items += 'ов';
   }
   if (ends.а.includes(categories.toString().slice(-1))) {
-    items += "а";
+    items += 'а';
   }
   return `${categories} ${items}`;
 };
 
 const siderStyle: React.CSSProperties = {
-  width: "450px",
-  lineHeight: "120px",
-  backgroundColor: "#fff",
+  width: '450px',
+  lineHeight: '120px',
+  backgroundColor: '#fff',
 };
 
 const Catalog = () => {
   const params = useParams();
   const location = useLocation();
-  console.log("location", location.pathname, "params", params);
+  console.log('location', location.pathname, 'params', params);
   const getImageURL = (p: CatalogItemType): string => {
     const products = getProducts(p.subcategory?.[0]?.productsID);
 
@@ -54,9 +54,9 @@ const Catalog = () => {
         <CatalogNavigation />
       </Sider>
       <Layout>
-        <Content style={{ margin: "24px 16px", overflow: "initial" }}>
+        <Content style={{ margin: '24px 16px', overflow: 'initial' }}>
           <Flex wrap="wrap" gap={50} justify="center">
-            {location.pathname === "/catalog" &&
+            {location.pathname === '/catalog' &&
               catalog.map((p) => (
                 <Link key={p.id} href={`${findPathByName(p.name)}`}>
                   <Card

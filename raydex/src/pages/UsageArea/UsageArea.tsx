@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import { usageDescription } from "../../lib/usage";
+import { useParams } from 'react-router-dom';
+import { usageDescription } from '../../lib/usage';
 
 export const UsageArea = () => {
   const params = useParams();

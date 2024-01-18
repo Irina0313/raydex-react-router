@@ -1,9 +1,9 @@
-import { catalog } from "../lib/catalog/catalog";
-import { CatalogItemType } from "../lib/catalog/catalog";
-import { ProductItemType } from "../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters";
-import { usageAreas } from "../lib/constants";
-import { pages } from "../lib/constants";
-import { getProducts } from "./getProducts";
+import { catalog } from '../lib/catalog/catalog';
+import { CatalogItemType } from '../lib/catalog/catalog';
+import { ProductItemType } from '../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
+import { usageAreas } from '../lib/constants';
+import { pages } from '../lib/constants';
+import { getProducts } from './getProducts';
 
 export function getPage(path: string):
   | {

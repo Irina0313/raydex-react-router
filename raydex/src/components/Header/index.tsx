@@ -1,9 +1,9 @@
-import { Layout, Menu, Flex } from "antd";
-import styles from "./header.module.scss";
-import { pages } from "../../utils/getPage";
+import { Layout, Menu, Flex } from 'antd';
+import styles from './header.module.scss';
+import { pages } from '../../utils/getPage';
 const { Header } = Layout;
 
-import Logo from "../Logo";
+import Logo from '../Logo';
 
 const HeaderComponent = () => {
   return (
@@ -14,13 +14,13 @@ const HeaderComponent = () => {
           className={styles.menu}
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={[""]}
+          defaultSelectedKeys={['']}
           items={pages.map((page) => {
             const key = page.key;
             return {
               key,
               label:
-                page.key === "catalog" ? (
+                page.key === 'catalog' ? (
                   <a href={`/${page.key}/x-ray-and-gamma-radiation-dosimeters`}>
                     {page.name}
                   </a>

@@ -1,10 +1,10 @@
-import { Link, useParams } from "react-router-dom";
-import { Card } from "antd";
-import ImagesCarousel from "../ImagesCarusel";
+import { Link } from 'react-router-dom';
+import { Card } from 'antd';
+import ImagesCarousel from '../ImagesCarusel';
 
-import CustomButton from "../button";
-import { ProductItemType } from "../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters";
-import { findPathByName } from "../../utils/getFullPath";
+import CustomButton from '../button';
+import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
+import { findPathByName } from '../../utils/getFullPath';
 
 const { Meta } = Card;
 
@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({
   category = [],
-  imagePathPrefix = "",
+  imagePathPrefix = '',
 }) => {
   return (
     <>
@@ -27,9 +27,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
               hoverable
               style={{
                 width: 400,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
               }}
               cover={
                 <ImagesCarousel
@@ -41,7 +41,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               <Meta
                 title={
                   <Link
-                    style={{ overflow: "visible" }}
+                    style={{ overflow: 'visible' }}
                     to={`${findPathByName(p.name)}`}
                     /* onClick={() => handleClick(p.name)} */
                   >

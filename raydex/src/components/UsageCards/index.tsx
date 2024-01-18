@@ -1,6 +1,6 @@
-import { Card, Flex, Typography } from "antd";
-import { usageAreas } from "../../lib/constants";
-import { useNavigate } from "react-router-dom";
+import { Card, Flex, Typography } from 'antd';
+import { usageAreas } from '../../lib/constants';
+import { useNavigate } from 'react-router-dom';
 
 const { Meta } = Card;
 
@@ -10,11 +10,11 @@ export const UsageCards = () => {
     navigate(`/usage/${key}`);
   };
   return (
-    <div style={{ padding: "0 50px" }}>
-      {" "}
+    <div style={{ padding: '0 50px' }}>
+      {' '}
       <Typography.Title
         level={2}
-        style={{ fontWeight: "bold", textAlign: "left" }}
+        style={{ fontWeight: 'bold', textAlign: 'left' }}
       >
         Применение
       </Typography.Title>
@@ -22,9 +22,9 @@ export const UsageCards = () => {
         {usageAreas.map((a) => (
           <Card
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
               width: 400,
             }}
             onClick={() => handleCardClick(a.key)}
@@ -36,10 +36,10 @@ export const UsageCards = () => {
               title={
                 <div
                   style={{
-                    textWrap: "wrap",
-                    overflow: "visible",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
+                    textWrap: 'wrap',
+                    overflow: 'visible',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   {a.name}

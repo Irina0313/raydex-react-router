@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import { CarouselRef } from "antd/es/carousel";
-import { Carousel } from "antd";
-import style from "./style.module.scss";
+import React, { useRef } from 'react';
+import { CarouselRef } from 'antd/es/carousel';
+import { Carousel } from 'antd';
+import style from './style.module.scss';
 
 const ImagesCarousel: React.FC<{
   images: string[];
   imagePathPrefix?: string;
-}> = ({ images, imagePathPrefix = "" }) => {
+}> = ({ images, imagePathPrefix = '' }) => {
   const carouselRef = useRef<CarouselRef>(null);
 
   const handleNextSlide = () => {

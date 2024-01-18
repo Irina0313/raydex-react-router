@@ -1,9 +1,9 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 
-import "./App.css";
-import { Layout } from "./components/Layout";
-import Catalog from "./pages/Catalog/Catalog";
-import * as pages from "./pages";
+import './App.css';
+import { Layout } from './components/Layout';
+import Catalog from './pages/Catalog/Catalog';
+import * as pages from './pages';
 
 function App() {
   return (

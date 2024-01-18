@@ -1,10 +1,10 @@
-import { catalog, CatalogItemType } from "../lib/catalog/catalog";
-import { getProducts } from "./getProducts";
+import { catalog, CatalogItemType } from '../lib/catalog/catalog';
+import { getProducts } from './getProducts';
 
 export function findPathByName(
   name: string,
   catalogItems: CatalogItemType[] = catalog,
-  pathPrefix: string = "/catalog",
+  pathPrefix = '/catalog',
 ): string | null {
   for (const item of catalogItems) {
     if (item.name === name || item.id === name) {
