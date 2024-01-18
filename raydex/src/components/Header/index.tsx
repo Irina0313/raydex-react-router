@@ -1,9 +1,10 @@
-import { Layout, Menu, Flex } from 'antd';
-import styles from './header.module.scss';
-import { pages } from '../../utils/getPage';
+import { Layout, Menu, Flex } from "antd";
+import styles from "./header.module.scss";
+import { pages } from "../../utils/getPage";
 const { Header } = Layout;
 
-import Logo from '../Logo';
+import Logo from "../Logo";
+import { Link } from "react-router-dom";
 
 const HeaderComponent = () => {
   return (
@@ -14,18 +15,20 @@ const HeaderComponent = () => {
           className={styles.menu}
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={['']}
+          defaultSelectedKeys={[""]}
           items={pages.map((page) => {
             const key = page.key;
             return {
               key,
               label:
-                page.key === 'catalog' ? (
-                  <a href={`/${page.key}/x-ray-and-gamma-radiation-dosimeters`}>
+                page.key === "catalog" ? (
+                  <Link
+                    to={`/${page.key}/x-ray-and-gamma-radiation-dosimeters`}
+                  >
                     {page.name}
-                  </a>
+                  </Link>
                 ) : (
-                  <a href={`/${page.key}`}>{page.name}</a>
+                  <Link to={`/${page.key}`}>{page.name}</Link>
                 ),
             };
           })}
