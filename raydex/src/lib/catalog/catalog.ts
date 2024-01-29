@@ -1,8 +1,15 @@
+import { pedestrianAndLuggage } from './products/07_radiation-portal-monitors/PedestrianAndLuggage';
+import { contrabandDetector } from './products/06_contraband-detector/ContrabandDetector';
 import {
   electronicDosimetrs,
   ProductItemType,
 } from './products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
-/* import { personalDosimetrs } from "./products/01_XRayAndGammaRadiationDosimeters/PersonalDosimeters"; */
+import { personalDosimetrs } from './products/01_XRayAndGammaRadiationDosimeters/PersonalDosimeters';
+import { prdGamma } from './products/02_personal-radiation-detectors/PrdGamma';
+import { radionuclideIdentificationDevices } from './products/03_radionuclideIdentificationDevices/RadionuclideIdentificationDevices';
+import { smartProbes } from './products/04_smart-probes/SmartProbes';
+import { chemicalWarfareAgentDetectors } from './products/05_chemical-warfare-agent-detectors/ChemicalWarfareAgentDetectors';
+import { vehicle } from './products/07_radiation-portal-monitors/Vehicle';
 
 interface IProductsListItem {
   id: string;
@@ -14,8 +21,43 @@ export const productsList: IProductsListItem[] = [
     id: 'electronicDosimetrs',
     value: electronicDosimetrs,
   },
+  {
+    id: 'personalDosimetrs',
+    value: personalDosimetrs,
+  },
+  /*  {
+    id: 'prdGammaNeutron',
+    value: prdGammaNeutron,
+  }, */
+  {
+    id: 'prdGamma',
+    value: prdGamma,
+  },
+  {
+    id: 'radionuclideIdentificationDevices',
+    value: radionuclideIdentificationDevices,
+  },
+  {
+    id: 'smartProbes',
+    value: smartProbes,
+  },
+  {
+    id: 'chemicalWarfareAgentDetectors',
+    value: chemicalWarfareAgentDetectors,
+  },
+  {
+    id: 'contrabandDetector',
+    value: contrabandDetector,
+  },
+  {
+    id: 'vehicle',
+    value: vehicle,
+  },
+  {
+    id: 'pedestrianAndLuggage',
+    value: pedestrianAndLuggage,
+  },
 ];
-
 export interface CatalogItemType {
   id: string;
   path: string;
@@ -40,7 +82,7 @@ export const catalog: CatalogItemType[] = [
         id: 'sub2',
         path: 'personal-dosimeters',
         name: 'Индивидуальные дозиметры',
-        /* products: personalDosimetrs, */
+        productsID: 'personalDosimetrs',
       },
     ],
   },
@@ -48,25 +90,51 @@ export const catalog: CatalogItemType[] = [
     id: '2',
     path: 'personal-radiation-detectors',
     name: 'Поисковые приборы радиационного контроля',
-    subcategory: [],
+    subcategory: [
+      /* {
+        id: 'sub3',
+        path: 'prd-gamma-neutron',
+        name: 'Поисковые приборы гамма и нейтронного излучения',
+        productsID: 'prdGammaNeutron',
+      }, */
+      {
+        id: 'sub4',
+        path: 'prd-gamma',
+        name: 'Поисковые приборы гамма-излучения',
+        productsID: 'prdGamma',
+      },
+    ],
   },
   {
     id: '3',
     path: 'radiation-portal-monitors',
     name: 'Радиационные портальные мониторы',
-    subcategory: [],
+    subcategory: [
+      {
+        id: 'sub5',
+        path: 'vehicle',
+        name: 'Транспортные мониторы',
+        productsID: 'vehicle',
+      },
+      {
+        id: 'sub6',
+        path: 'pedestrianAndLuggage',
+        name: 'Пешеходные и багажные мониторы',
+        productsID: 'pedestrianAndLuggage',
+      },
+    ],
   },
   {
     id: '4',
     path: 'radionuclide-identification-devices',
     name: 'Идентификаторы радиоизотопов',
-    subcategory: [],
+    productsID: 'radionuclideIdentificationDevices',
   },
   {
     id: '5',
     path: 'smart-probes',
     name: 'Интеллектуальные блоки детектирования',
-    subcategory: [],
+    productsID: 'smartProbes',
   },
   {
     id: '6',
@@ -78,13 +146,13 @@ export const catalog: CatalogItemType[] = [
     id: '7',
     path: 'contraband-detector',
     name: 'Детектор контрабанды',
-    subcategory: [],
+    productsID: 'contrabandDetector',
   },
   {
     id: '8',
     path: 'chemical-warfare-agent-detectors',
     name: 'Приборы радиационно-химической разведки',
-    subcategory: [],
+    productsID: 'chemicalWarfareAgentDetectors',
   },
   {
     id: '9',

@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Tabs } from 'antd';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { getPage } from '../../utils/getPage';
 import ImagesSlider from '../../components/ImagesSlider';
 
-export const Product = () => {
+interface IProductParams {
+  handleProductPage: (param: boolean) => void;
+}
+
+export const Product = ({ handleProductPage }: IProductParams) => {
+  handleProductPage(true);
   const params = useParams();
-  const { product } = params;
+  console.log(params);
+  const { product, products } = params;
+
+  const tabsSectionRef = useRef<HTMLDivElement>(null);
 
   const path = useLocation().pathname;
 
-  const productItem = product && getPage(product.toString());
+  const productItem =
+    (product && getPage(product.toString())) ||
+    (products && getPage(products.toString()));
 
   const images = productItem && 'images' in productItem && productItem?.images;
   const tabs = productItem && 'tabs' in productItem && productItem?.tabs;
@@ -24,10 +34,10 @@ export const Product = () => {
       (key === 'Описание' && 'fullDescription' in productItem
         ? productItem.fullDescription
         : key === 'Характеристики' && 'fullCharacteristics' in productItem
-          ? productItem.fullCharacteristics
-          : key === 'Документы' && 'docs' in productItem
-            ? productItem.docs
-            : null)
+        ? productItem.fullCharacteristics
+        : key === 'Документы' && 'docs' in productItem
+        ? productItem.docs
+        : null)
     );
   };
 
@@ -37,6 +47,11 @@ export const Product = () => {
 
   const handleDetailsLinkClick = (tab: string) => {
     setActiveTab(tab);
+    if (tabsSectionRef.current) {
+      tabsSectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
   };
 
   const prevPagePath = (): string => {
@@ -44,11 +59,11 @@ export const Product = () => {
   };
 
   return (
-    <>
+    <div style={{ padding: '0 50px' }}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
           {images && (
-            <ImagesSlider images={images} imagePathPrefix="../../../" />
+            <ImagesSlider images={images} imagePathPrefix='../../../' />
           )}
         </div>
         <div className={styles.shortDescription}>
@@ -57,32 +72,37 @@ export const Product = () => {
             productItem.shortDescription}
           <Link
             className={styles.detailsLink}
-            to="#description"
+            to='#description'
             onClick={() => handleDetailsLinkClick('Описание')}
           >
             Подробности
           </Link>
-          <h3>Характеристики</h3>
-          {productItem &&
-            'characteristics' in productItem &&
-            productItem.characteristics}
-          <Link
-            className={styles.detailsLink}
-            to="#characteristics"
-            onClick={() => handleDetailsLinkClick('Характеристики')}
-          >
-            Все характеристики
-          </Link>
+
+          {productItem && 'characteristics' in productItem && (
+            <>
+              <h3>Характеристики</h3>
+
+              {productItem.characteristics}
+
+              <Link
+                className={styles.detailsLink}
+                to='#characteristics'
+                onClick={() => handleDetailsLinkClick('Характеристики')}
+              >
+                Все характеристики
+              </Link>
+            </>
+          )}
         </div>
       </div>
-      <div className={styles.bottomSection}>
+      <div className={styles.bottomSection} ref={tabsSectionRef}>
         {tabs && (
           <Tabs
             onChange={onChange}
-            type="card"
-            items={Object.values(tabs).map((key, index) => {
+            type='card'
+            items={Object.values(tabs).map((key) => {
               return {
-                id: `${Object.keys(tabs)[index]}`,
+                id: `${key}`,
                 label: `${key}`,
                 key: key,
                 children: getTabContent(key),
@@ -92,10 +112,11 @@ export const Product = () => {
           />
         )}
       </div>
-
-      <Link className={styles.detailsLink} to={prevPagePath()}>
-        Назад к списку
-      </Link>
-    </>
+      <div className={styles.detailsLinkContainer}>
+        <Link className={styles.detailsLink} to={prevPagePath()}>
+          Назад к списку
+        </Link>
+      </div>
+    </div>
   );
 };

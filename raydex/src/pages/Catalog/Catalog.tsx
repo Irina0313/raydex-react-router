@@ -11,13 +11,27 @@ import CatalogNavigation from '../../components/CatalogNavigation';
 
 const { Meta } = Card;
 
-const productsAmount = (subcategory: CatalogItemType[] | undefined) => {
-  const categories = subcategory
-    ? subcategory.flatMap((s) => getProducts(s.productsID)).length
-    : 0;
+const productsAmount = (
+  subcategory: CatalogItemType[] | CatalogItemType | undefined
+) => {
+  const getItemsAmount = () => {
+    console.log('subcategory', subcategory);
+    let amount = 0;
+    if (subcategory && Array.isArray(subcategory)) {
+      amount += subcategory.flatMap((s) => getProducts(s.productsID)).length;
+    }
+    if (subcategory && !Array.isArray(subcategory)) {
+      const categ = getProducts(subcategory.productsID);
+      if (categ && Array.isArray(categ)) {
+        amount += categ.length;
+      }
+    }
+    return amount;
+  };
+
+  const categories = getItemsAmount();
 
   let items = 'товар';
-
   const ends = {
     ов: ['0', '5', '6', '7', '8', '9'],
     а: ['2', '3', '4'],
@@ -38,41 +52,54 @@ const siderStyle: React.CSSProperties = {
   backgroundColor: '#fff',
 };
 
-const Catalog = () => {
+interface ICatalogParams {
+  isProductPage: boolean;
+  handleProductPage: (param: boolean) => void;
+}
+const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
+  handleProductPage(false);
   const params = useParams();
   const location = useLocation();
-  console.log('location', location.pathname, 'params', params);
+  // console.log("location", location.pathname, "params", params);
   const getImageURL = (p: CatalogItemType): string => {
-    const products = getProducts(p.subcategory?.[0]?.productsID);
+    const products = getProducts(
+      p.subcategory?.[0]?.productsID || p.productsID
+    );
 
     return `${products?.[0]?.images?.[0]}`;
   };
 
   return (
     <Layout hasSider>
-      <Sider style={siderStyle} width={350}>
-        <CatalogNavigation />
-      </Sider>
+      {!isProductPage && (
+        <Sider style={siderStyle} width={350}>
+          <CatalogNavigation />
+        </Sider>
+      )}
       <Layout>
         <Content style={{ margin: '24px 16px', overflow: 'initial' }}>
-          <Flex wrap="wrap" gap={50} justify="center">
+          <Flex wrap='wrap' gap={50} justify='center'>
             {location.pathname === '/catalog' &&
               catalog.map((p) => (
                 <Link key={p.id} href={`${findPathByName(p.name)}`}>
                   <Card
                     hoverable
-                    style={{ width: 400 }}
+                    style={{ width: 400, padding: '0' }}
                     cover={
                       <img
-                        alt="Фото товара"
+                        alt='Фото товара'
                         /* src={`${p.subcategory?.[0]?.products?.[0]?.images?.[0]}`} */
                         src={getImageURL(p)}
                       />
                     }
                   >
                     <Meta
-                      title={p.name}
-                      description={`${productsAmount(p.subcategory)}`}
+                      title={<div>{p.name}</div>}
+                      description={`${
+                        p.subcategory
+                          ? productsAmount(p.subcategory)
+                          : productsAmount(p)
+                      }`}
                     />
                   </Card>
                 </Link>

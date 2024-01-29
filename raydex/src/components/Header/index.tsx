@@ -20,16 +20,17 @@ const HeaderComponent = () => {
             const key = page.key;
             return {
               key,
-              label:
-                page.key === "catalog" ? (
+              label: (
+                /* page.key === "catalog" ? (
                   <Link
                     to={`/${page.key}/x-ray-and-gamma-radiation-dosimeters`}
                   >
                     {page.name}
                   </Link>
-                ) : (
-                  <Link to={`/${page.key}`}>{page.name}</Link>
-                ),
+                ) : ( */
+                <Link to={`/${page.key}`}>{page.name}</Link>
+              ),
+              /* ) */
             };
           })}
         />

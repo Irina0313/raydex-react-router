@@ -1,0 +1,47 @@
+.shortDescriptionContainer,
+.fullDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  * {
+    text-align: start;
+  }
+}
+
+.highlightedText {
+  background-color: rgb(238, 238, 238);
+  border: solid 1px rgb(204, 204, 204);
+}
+
+.characteristics {
+  padding: 0 3px;
+  text-align: start;
+}
+
+.list {
+  padding: 0 0 0 20px;
+  list-style-type: "\2014";
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+.table {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 8px;
+    .name {
+      width: 50%;
+    }
+    .value {
+      flex-shrink: 1;
+      width: 25%;
+    }
+  }
+}

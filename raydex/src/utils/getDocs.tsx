@@ -24,16 +24,23 @@ interface certificate {
 }
 
 interface getDocsProps {
-  promotionalMaterials: string[];
-  certificates: certificate[];
+  promotionalMaterials?: string[];
+  certificates?: certificate[];
 }
 
 const getDocs = (params: getDocsProps) => {
   const { promotionalMaterials, certificates } = params;
 
   return (
-    <>
-      {promotionalMaterials.length > 0 && (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'start',
+        rowGap: '20px',
+      }}
+    >
+      {promotionalMaterials && promotionalMaterials.length > 0 && (
         <>
           <h2>Рекламные материалы:</h2>
           {promotionalMaterials.map((p) => (
@@ -47,7 +54,7 @@ const getDocs = (params: getDocsProps) => {
           ))}
         </>
       )}
-      {certificates.length > 0 && (
+      {certificates && certificates.length > 0 && (
         <>
           <h2>Сертификаты:</h2>
           {certificates.map((p) => (
@@ -69,6 +76,7 @@ const getDocs = (params: getDocsProps) => {
                 <Link
                   style={{ margin: '10px', lineHeight: '2.1rem' }}
                   to={p.path}
+                  target='_blank'
                 >
                   {p.title}
                 </Link>
@@ -77,7 +85,7 @@ const getDocs = (params: getDocsProps) => {
           ))}
         </>
       )}
-    </>
+    </div>
   );
 };
 

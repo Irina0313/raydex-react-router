@@ -7,12 +7,16 @@
   width: calc(100vw - 630px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+  align-items: start;
 }
 
 .sliderContainer {
   margin: 0 20px;
   width: 454px;
+}
+.detailsLinkContainer {
+  text-align: left;
 }
 
 .detailsLink {
