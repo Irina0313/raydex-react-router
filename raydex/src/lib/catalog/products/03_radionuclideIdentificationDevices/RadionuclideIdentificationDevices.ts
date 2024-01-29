@@ -51,7 +51,7 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/certificates/_PM1401_1401K_ТР_ТС_020_до_26.01.2025_(-3,_-3Е,_-3А,-3М,-3Р).pdf',
+          path: './assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/certificates/_PM1401_1401K_ТР_ТС_020_до_26.01.2025.pdf',
           title: 'Сертификат ТР ТС',
         },
 
