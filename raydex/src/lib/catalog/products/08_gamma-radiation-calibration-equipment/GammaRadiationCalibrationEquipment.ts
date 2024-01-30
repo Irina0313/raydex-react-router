@@ -1,6 +1,7 @@
 import { automaticIrradiationCalibrationSystemPm9200 } from './automatic-irradiation-calibration-system-pm9200/index';
 import { automaticIrradiationCalibrationSystemPm9101 } from './automatic-irradiation-calibration-system-pm9101/index';
 import { automaticIrradiationCalibrationSystemPm9100 } from './automatic-irradiation-calibration-system-pm9100/index';
+import { pm9300 } from './pm9300';
 
 import getFullCharacteristics from '../../../../utils/getFullCharacteristics';
 import getDocs from '../../../../utils/getDocs';
@@ -118,7 +119,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
   {
     id: 'automatic-irradiation-calibration-system-pm9200',
     name: 'Установка радиационная поверочная нейтронного излучения серии УРПН-РМ9200',
-    path: 'automatic-irradiation-calibration-system-pm200',
+    path: 'automatic-irradiation-calibration-system-pm9200',
     code: 'УРПН-РМ9200',
     images: [
       './assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/qhhn8l8rcwktfapxaso3br6bwji62tav.webp',
@@ -167,6 +168,50 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
         {
           type: 'link',
           path: 'https://www.oei.by/grsi?GrsiSearch%5Bgrsi_single%5D=&GrsiSearch%5Bgrsi_status%5D=1&GrsiSearch%5Bgrsi_name%5D=&GrsiSearch%5Bgrsi_nsut%5D=15472&GrsiSearch%5Bgrsi_number%5D=&GrsiSearch%5Bgrsi_izgname%5D=%D1%80%D0%B0%D0%B4%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BD&GrsiSearch%5Bgrsi_grantee%5D=&grsi_date-grsisearch-grsi_date-disp=&GrsiSearch%5Bgrsi_date%5D=&grsi_dateend-grsisearch-grsi_dateend-disp=&GrsiSearch%5Bgrsi_dateend%5D=&GrsiSearch%5Bgrsi_mcheck%5D=&GrsiSearch%5Bgrsi_mpi%5D=&GrsiSearch%5Bgrsi_groupname%5D=&GrsiSearch%5Bgrsi_prprizn%5D=',
+          title: `Государственный реестр СИ РБ`,
+        },
+      ],
+    }),
+  },
+  {
+    id: 'pm9300',
+    name: 'Установка радиационная поверочная гамма-излучения закрытая УРПГЗ-РМ9300',
+    path: 'pm9300',
+    code: 'УРПГЗ-РМ9300',
+    images: [
+      './assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/krd0gmtpm7mif19klre24b8s3fw09m4p.webp',
+      './assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/cx6bsb8p0e151z4rvs1mf8t2pxwqgchs.webp',
+      './assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/3ucde6gmh61yuat5o6ixwq088phkz2gk.webp',
+      './assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/881zx610wtmxtan9b6cokbj8alid65tx.webp',
+      './assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/qjbp2mtp7pdjz1gyyxl5y40tq3u3595n (1).webp',
+    ],
+
+    status: 'Под заказ',
+    shortDescription: pm9300().shortDescription,
+    fullDescription: pm9300().fullDescription,
+    sliderDescription: '',
+    tabs: {
+      description: 'Описание',
+      characteristics: 'Характеристики',
+      docs: 'Документы',
+    },
+
+    characteristics: pm9300().characteristicsShortDescription,
+    fullCharacteristics: getFullCharacteristics(pm9300().characteristics),
+    docs: getDocs({
+      promotionalMaterials: [
+        '../../../assets/productsImages/gamma-radiation-calibration-equipment/pm9300/promotionalMaterials/_PM9300_PM9300 Leaflet (2023.03 EN).pdf',
+      ],
+      certificates: [
+        {
+          type: 'doc',
+          path: '../../../assets/productsImages/gamma-radiation-calibration-equipment/pm9300/certificates/_PM9300_PM9300 TP TC Declaration.pdf',
+          title: 'Сертификат ТР ТС',
+        },
+
+        {
+          type: 'link',
+          path: 'https://www.oei.by/grsi?GrsiSearch%5Bgrsi_single%5D=&GrsiSearch%5Bgrsi_status%5D=1&GrsiSearch%5Bgrsi_name%5D=&GrsiSearch%5Bgrsi_nsut%5D=17136&GrsiSearch%5Bgrsi_number%5D=&GrsiSearch%5Bgrsi_izgname%5D=%D1%80%D0%B0%D0%B4%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BD&GrsiSearch%5Bgrsi_grantee%5D=&grsi_date-grsisearch-grsi_date-disp=&GrsiSearch%5Bgrsi_date%5D=&grsi_dateend-grsisearch-grsi_dateend-disp=&GrsiSearch%5Bgrsi_dateend%5D=&GrsiSearch%5Bgrsi_mcheck%5D=&GrsiSearch%5Bgrsi_mpi%5D=&GrsiSearch%5Bgrsi_groupname%5D=&GrsiSearch%5Bgrsi_prprizn%5D=',
           title: `Государственный реестр СИ РБ`,
         },
       ],

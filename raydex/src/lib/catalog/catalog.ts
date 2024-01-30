@@ -141,12 +141,12 @@ export const catalog: CatalogItemType[] = [
     name: 'Интеллектуальные блоки детектирования',
     productsID: 'smartProbes',
   },
-  {
+  /* {
     id: '6',
     path: 'contamination-measurement-monitors',
     name: 'Радиометры для контроля загрязненности',
     subcategory: [],
-  },
+  }, */
   {
     id: '7',
     path: 'contraband-detector',
@@ -159,22 +159,22 @@ export const catalog: CatalogItemType[] = [
     name: 'Приборы радиационно-химической разведки',
     productsID: 'chemicalWarfareAgentDetectors',
   },
-  {
+  /* {
     id: '9',
     path: 'radiation-monitoring-system',
     name: 'Автоматизированная система радиационного контроля',
     subcategory: [],
-  },
+  }, */
   {
     id: '10',
     path: 'gamma-radiation-calibration-equipment',
     name: 'Поверочные установки гамма и нейтронного излучения',
     productsID: 'gammaRadiationCalibrationEquipment',
   },
-  {
+  /* {
     id: '11',
     path: 'system-software',
     name: 'Системное программное обеспечение',
     subcategory: [],
-  },
+  }, */
 ];

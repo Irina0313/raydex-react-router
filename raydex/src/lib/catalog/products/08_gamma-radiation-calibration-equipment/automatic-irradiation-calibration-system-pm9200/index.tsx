@@ -202,10 +202,16 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         с детекторов и сигнализация о превышении установленных по каждому
         детектору порогов.
       </p>
-      <Image
-        width={600}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_srk2.webp'
-      />
+      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+        <Image
+          width={360}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9fm4ceuy2qp2omja2h0p4f6248rpbfox.webp'
+        />
+        <Image
+          width={360}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_srk2.webp'
+        />
+      </div>
 
       <h2>Система видеонаблюдения</h2>
       <p>
@@ -214,19 +220,41 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         визира и отсчетной шкалы, наблюдать за процессами в помещении, а также
         дистанционно управлять камерой наблюдения за показаниями приборов.
       </p>
-      <Image
-        width={800}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sv1.webp'
-      />
+      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+        <Image
+          width={479}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sv1.webp'
+        />
+        <Image
+          width={479}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/8ets28cv9oj17jb7yt5wrcb2ca9wxuw3.webp'
+        />
+      </div>
+
       <h2>Система сигнализации и блокировки</h2>
       <p>
         Представляет собой набор механизмов и устройств, которые совместно с
         системой управления обеспечивают защиту персонала от облучения.
       </p>
-      <Image
-        width={800}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb3.webp'
-      />
+      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+        <Image
+          width={257}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb1.webp'
+        />
+        <Image
+          width={257}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb2.webp'
+        />
+        <Image
+          width={257}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb3.webp'
+        />
+        <Image
+          width={257}
+          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb4.webp'
+        />
+      </div>
+
       <b>
         Дополнительное вспомогательное оборудование и принадлежности
         поставляются по отдельному заказу.
