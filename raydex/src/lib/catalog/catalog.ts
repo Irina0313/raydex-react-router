@@ -1,3 +1,4 @@
+import { gammaRadiationCalibrationEquipment } from './products/08_gamma-radiation-calibration-equipment/GammaRadiationCalibrationEquipment';
 import { pedestrianAndLuggage } from './products/07_radiation-portal-monitors/PedestrianAndLuggage';
 import { contrabandDetector } from './products/06_contraband-detector/ContrabandDetector';
 import {
@@ -56,6 +57,10 @@ export const productsList: IProductsListItem[] = [
   {
     id: 'pedestrianAndLuggage',
     value: pedestrianAndLuggage,
+  },
+  {
+    id: 'gammaRadiationCalibrationEquipment',
+    value: gammaRadiationCalibrationEquipment,
   },
 ];
 export interface CatalogItemType {
@@ -164,7 +169,7 @@ export const catalog: CatalogItemType[] = [
     id: '10',
     path: 'gamma-radiation-calibration-equipment',
     name: 'Поверочные установки гамма и нейтронного излучения',
-    subcategory: [],
+    productsID: 'gammaRadiationCalibrationEquipment',
   },
   {
     id: '11',

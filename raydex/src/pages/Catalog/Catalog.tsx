@@ -4,7 +4,7 @@ import Link from 'antd/es/typography/Link';
 import { CatalogItemType, catalog } from '../../lib/catalog/catalog';
 import { getProducts } from '../../utils/getProducts';
 import { findPathByName } from '../../utils/getFullPath';
-import { Outlet, useLocation, useParams } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
 import CatalogNavigation from '../../components/CatalogNavigation';
@@ -58,7 +58,7 @@ interface ICatalogParams {
 }
 const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
   handleProductPage(false);
-  const params = useParams();
+
   const location = useLocation();
   // console.log("location", location.pathname, "params", params);
   const getImageURL = (p: CatalogItemType): string => {
