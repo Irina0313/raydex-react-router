@@ -114,7 +114,7 @@ export const automaticIrradiationCalibrationSystemPm9101 = () => {
       </p>
       <Image
         width={400}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9101/images/scheme pm9000.jpg'
+        src='./public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9101/images/scheme pm9000.jpg'
       />
 
       <h2>Доступные модификации</h2>
