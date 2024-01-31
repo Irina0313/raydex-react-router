@@ -1,6 +1,6 @@
 import { Card, Flex, Layout } from 'antd';
 
-import Link from 'antd/es/typography/Link';
+import { Link } from 'react-router-dom';
 import { CatalogItemType, catalog } from '../../lib/catalog/catalog';
 import { getProducts } from '../../utils/getProducts';
 import { findPathByName } from '../../utils/getFullPath';
@@ -80,7 +80,7 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
           <Flex wrap='wrap' gap={50} justify='center'>
             {location.pathname === '/catalog' &&
               catalog.map((p) => (
-                <Link key={p.id} href={`${findPathByName(p.name)}`}>
+                <Link key={p.id} to={`${findPathByName(p.name)}`}>
                   <Card
                     hoverable
                     style={{ width: 400, height: 520, padding: '10px' }}
