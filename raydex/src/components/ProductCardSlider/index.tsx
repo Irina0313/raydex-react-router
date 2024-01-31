@@ -1,4 +1,3 @@
-import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 
 register();
@@ -24,7 +23,7 @@ export default function ProductCardSwiper({
   images,
   imagePathPrefix = '',
 }: SwiperProps) {
-  const swiperElRef = useRef(null);
+  //const swiperElRef = useRef(null);
 
   return (
     <div>

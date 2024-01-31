@@ -38,7 +38,7 @@ export default function ProductSlider({ images, pref }: ProductSliderProps) {
         ))}
       </Swiper>
       <Swiper
-        onSwiper={setThumbsSwiper}
+        onSwiper={() => setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={3}
         freeMode={true}

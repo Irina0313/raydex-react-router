@@ -11,13 +11,7 @@ import 'swiper/css/pagination';
 import './styles.scss';
 
 // import required modules
-import {
-  EffectFade,
-  Navigation,
-  Pagination,
-  Mousewheel,
-  Keyboard,
-} from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 import { sliderItemsCodes } from '../../lib/catalog/productsForMainSlider';
 import { getProductByCode } from '../../utils/getProductByCode';

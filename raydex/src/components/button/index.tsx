@@ -4,7 +4,7 @@ import { useState } from 'react';
 interface ICustomButtonProps {
   text: string;
   htmlType?: 'button' | 'submit' | 'reset' | undefined;
-  handleClick: () => void;
+  handleClick?: () => void;
 }
 
 const CustomButton = ({ text, htmlType, handleClick }: ICustomButtonProps) => {
@@ -17,7 +17,7 @@ const CustomButton = ({ text, htmlType, handleClick }: ICustomButtonProps) => {
     width: '120px',
     height: '40px',
     fontSize: '16px',
-    textTransform: 'uppercase',
+
     letterSpacing: '0.6px',
   };
 
@@ -29,12 +29,12 @@ const CustomButton = ({ text, htmlType, handleClick }: ICustomButtonProps) => {
     <Button
       type='primary'
       htmlType={htmlType || undefined}
-      //style={buttonStyle}
+      style={buttonStyle}
       onMouseEnter={hoverHandler}
       onMouseLeave={hoverHandler}
       onClick={handleClick}
     >
-      {text}
+      {text.toUpperCase()}
     </Button>
   );
 };
