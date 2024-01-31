@@ -4,6 +4,7 @@ import { LinkButton } from '../LinkButton';
 import { Flex } from 'antd';
 import styles from './styles.module.scss';
 import './styles.scss';
+
 import { findPathByName } from '../../utils/getFullPath';
 
 export const Slide = (product: ProductItemType) => {
