@@ -1,10 +1,10 @@
-import { Menu } from "antd";
-import type { MenuProps } from "antd/es/menu";
-import { CatalogItemType, catalog } from "../../lib/catalog/catalog";
-import { Link, redirect } from "react-router-dom";
-import { findPathByName } from "../../utils/getFullPath";
+import { Menu } from 'antd';
+import type { MenuProps } from 'antd/es/menu';
+import { CatalogItemType, catalog } from '../../lib/catalog/catalog';
+import { Link, redirect } from 'react-router-dom';
+import { findPathByName } from '../../utils/getFullPath';
 
-type MenuItem = Required<MenuProps>["items"][number];
+type MenuItem = Required<MenuProps>['items'][number];
 
 function getItem(
   label: React.ReactNode,
@@ -28,7 +28,7 @@ export default function CatalogNavigation() {
 
   const createMenuItems = (
     items: CatalogItemType[],
-    parentPath = "/catalog"
+    parentPath = '/catalog'
   ): MenuItem[] => {
     return items.map((item) => {
       const { id, path, name, subcategory } = item;
@@ -41,7 +41,12 @@ export default function CatalogNavigation() {
       return getItem(
         <Link
           to={`${findPathByName(name)}`}
-          style={{ display: "inline-block", width: "100%", height: "100%" }}
+          style={{
+            display: 'inline-block',
+            width: '100%',
+            height: '100%',
+            color: 'black',
+          }}
         >
           {name}
         </Link>,
@@ -57,8 +62,8 @@ export default function CatalogNavigation() {
   return (
     <Menu
       onClick={(e) => handleMenuClick(e.key)}
-      mode="inline"
-      style={{ width: 350, textAlign: "left" }}
+      mode='inline'
+      style={{ width: 350, textAlign: 'left' }}
       items={items}
     />
   );

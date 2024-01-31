@@ -103,7 +103,9 @@ export const electronicDosimetrs: ProductItemType[] = [
     status: 'Под заказ',
     shortDescription: wristGammaDosimeterRM1603b().shortDescription,
     fullDescription: wristGammaDosimeterRM1603b().fullDescription,
-
+    sliderDescription: `Дозиметр гамма-излучения наручный ДКГ-РМ1603B Миниатюрный
+    профессиональный дозиметр предназначен для осуществления непрерывного
+    круглосуточного контроля радиационной обстановки.`,
     tabs: {
       description: 'Описание',
       characteristics: 'Характеристики',

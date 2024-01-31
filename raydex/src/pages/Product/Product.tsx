@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { getPage } from '../../utils/getPage';
-import ImagesSlider from '../../components/ImagesSlider';
+import ProductSlider from '../../components/ProductSlider';
 
 interface IProductParams {
   handleProductPage: (param: boolean) => void;
@@ -12,7 +12,7 @@ interface IProductParams {
 export const Product = ({ handleProductPage }: IProductParams) => {
   handleProductPage(true);
   const params = useParams();
-  console.log(params);
+  //console.log(params);
   const { product, products } = params;
 
   const tabsSectionRef = useRef<HTMLDivElement>(null);
@@ -62,9 +62,7 @@ export const Product = ({ handleProductPage }: IProductParams) => {
     <div style={{ padding: '0 50px' }}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
-          {images && (
-            <ImagesSlider images={images} imagePathPrefix='../../../' />
-          )}
+          {images && <ProductSlider images={images} pref='../../../' />}
         </div>
         <div className={styles.shortDescription}>
           {productItem &&

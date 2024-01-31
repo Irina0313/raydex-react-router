@@ -15,7 +15,6 @@ const productsAmount = (
   subcategory: CatalogItemType[] | CatalogItemType | undefined
 ) => {
   const getItemsAmount = () => {
-    console.log('subcategory', subcategory);
     let amount = 0;
     if (subcategory && Array.isArray(subcategory)) {
       amount += subcategory.flatMap((s) => getProducts(s.productsID)).length;
@@ -84,7 +83,7 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
                 <Link key={p.id} href={`${findPathByName(p.name)}`}>
                   <Card
                     hoverable
-                    style={{ width: 400, padding: '0' }}
+                    style={{ width: 400, height: 520, padding: '10px' }}
                     cover={
                       <img
                         alt='Фото товара'

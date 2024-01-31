@@ -3,14 +3,14 @@ import { ProductItemType } from '../lib/catalog/products/01_XRayAndGammaRadiatio
 
 export const getProducts = (prodId = ''): ProductItemType[] | undefined => {
   if (prodId) {
-    /* console.log(
-      "prodId",
+    /*  console.log(
+      'prodId',
       prodId,
-      "getProducts",
-      productsList.filter((p) => p.id === prodId)[0],
+      'getProducts',
+      productsList.filter((p) => p.id === prodId)[0]
     ); */
     const prod = productsList.filter((p) => p.id === prodId)[0];
-    return 'value' in prod ? prod.value : undefined;
+    return prod && 'value' in prod ? prod.value : undefined;
   }
   return undefined;
 };

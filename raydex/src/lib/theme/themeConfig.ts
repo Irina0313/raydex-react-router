@@ -5,6 +5,7 @@ const colorPrimary = '#2e69ad';
 export const myTheme: ThemeConfig = {
   cssVar: true,
   token: {
+    fontFamily: 'Roboto, sans-serif',
     colorPrimary: '#2e69ad',
     fontSize: 16,
     colorPrimaryBg: '#dfe8ed',
@@ -40,6 +41,8 @@ export const myTheme: ThemeConfig = {
       itemPaddingInline: 18,
       colorFillAlter: '#fff',
       itemHeight: 50,
+
+      itemSelectedBg: 'none',
     },
     Carousel: {
       dotHeight: 10,

@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
-import { Card } from 'antd';
-import ImagesCarousel from '../ImagesCarousel';
+import { Card, Modal } from 'antd';
+import ContactForm from '../forms/contactForm';
 
 import CustomButton from '../button';
 import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 
 import { findPathByName } from '../../utils/getFullPath';
+import ProductCardSwiper from '../ProductCardSlider';
+import { useState } from 'react';
 
 const { Meta } = Card;
 
@@ -18,6 +20,20 @@ const ProductCard: React.FC<ProductCardProps> = ({
   category = [],
   imagePathPrefix = '',
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const modalStyles = {
+    footer: {
+      display: 'none',
+    },
+  };
   return (
     <>
       {category &&
@@ -34,10 +50,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
                   justifyContent: 'space-between',
                 }}
                 cover={
-                  <ImagesCarousel
-                    images={p.images}
-                    imagePathPrefix={imagePathPrefix}
-                  />
+                  <>
+                    <ProductCardSwiper
+                      images={p.images}
+                      imagePathPrefix={imagePathPrefix}
+                    />
+                  </>
                 }
               >
                 <Meta
@@ -52,10 +70,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
                   }
                   description={`${p.status}`}
                 />
-                <CustomButton text='Заказать' />
+                <div style={{ margin: '10px 0 0 0' }}>
+                  <CustomButton text='Заказать' handleClick={showModal} />
+                </div>
               </Card>
             )
         )}
+      <Modal open={isModalOpen} styles={modalStyles} onCancel={handleCancel}>
+        <ContactForm />
+      </Modal>
     </>
   );
 };
