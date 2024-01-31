@@ -10,7 +10,7 @@ export const getProducts = (prodId = ''): ProductItemType[] | undefined => {
       productsList.filter((p) => p.id === prodId)[0]
     ); */
     const prod = productsList.filter((p) => p.id === prodId)[0];
-    return prod && 'value' in prod ? prod.value : undefined;
+    return 'value' in prod ? prod.value : undefined;
   }
   return undefined;
 };
