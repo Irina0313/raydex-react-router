@@ -65,6 +65,10 @@ export const personalDosimetrs: ProductItemType[] = [
       xRayAndGammaRadiationPersonalDosimeterPM1611().shortDescription,
     fullDescription:
       xRayAndGammaRadiationPersonalDosimeterPM1611().fullDescription,
+    sliderDescription: `Дозиметр индивидуальный рентгеновского и гамма излучений ДКГ-PM1611
+      Дозиметр предназначен для измерения индивидуального эквивалента дозы
+      Hp(10) (ЭД) и мощности индивидуального эквивалента дозы Ĥp(10) (МЭД)
+      непрерывного и импульсного рентгеновского и гамма-излучения.`,
     tabs: {
       description: 'Описание',
       characteristics: 'Характеристики',

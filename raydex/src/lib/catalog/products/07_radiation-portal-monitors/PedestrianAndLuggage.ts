@@ -20,7 +20,8 @@ export const pedestrianAndLuggage: ProductItemType[] = [
     status: 'Под заказ',
     shortDescription: radiationMonitorPm5000p().shortDescription,
     fullDescription: radiationMonitorPm5000p().fullDescription,
-    sliderDescription: '',
+    sliderDescription:
+      'Мониторы широко используются в аэропортах и на вокзалах для контроля выгружаемых из самолетов и поездов багажа и грузов, на почтамтах для контроля почтовых отправлений, в банковских учреждениях для контроля денежной массы, на КПП атомных электростанций и предприятиях атомно-промышленного комплекса, металлургических комбинатах и пр. Модульная конструкция позволяет легко адаптировать и конфигурировать систему в соответствии с требованиями заказчика.',
     tabs: {
       description: 'Описание',
       characteristics: 'Характеристики',

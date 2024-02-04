@@ -29,20 +29,7 @@ export const UsageCards = () => {
                   hoverable
                   cover={<img alt={a.name} src={a.imgSrc} />}
                 >
-                  <Meta
-                    title={
-                      <div
-                      /*  style={{
-                          textWrap: 'wrap',
-                          overflow: 'visible',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
-                        }} */
-                      >
-                        {a.name}
-                      </div>
-                    }
-                  />
+                  <Meta title={<div>{a.name}</div>} />
                 </Card>
               )}
               {index === 4 && (
@@ -53,20 +40,7 @@ export const UsageCards = () => {
                   hoverable
                   cover={<img alt={a.name} src={a.imgSrc} />}
                 >
-                  <Meta
-                    title={
-                      <div
-                      /*  style={{
-                          textWrap: 'wrap',
-                          overflow: 'visible',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
-                        }} */
-                      >
-                        {a.name}
-                      </div>
-                    }
-                  />
+                  <Meta title={<div>{a.name}</div>} />
                 </Card>
               )}
             </>
@@ -83,22 +57,7 @@ export const UsageCards = () => {
                   hoverable
                   cover={<img alt={a.name} src={a.imgSrc} />}
                 >
-                  <Meta
-                    className={styles.meta}
-                    title={
-                      <div
-
-                      /*  style={{
-                          textWrap: 'wrap',
-                          overflow: 'visible',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
-                        }} */
-                      >
-                        {a.name}
-                      </div>
-                    }
-                  />
+                  <Meta className={styles.meta} title={<div>{a.name}</div>} />
                 </Card>
               )}
             </>

@@ -8,7 +8,7 @@
 }
 
 .rightSide {
-  width: 50%;
+  width: 40%;
   padding: 0 0 40px 0;
 
   img {
@@ -26,7 +26,7 @@
 }
 
 .leftSide {
-  width: 40%;
+  width: 55%;
   gap: 40px;
 
   &Content {
@@ -52,10 +52,11 @@
 
     &Content {
       padding: 10px;
-      gap: 10px;
+      gap: 15px;
     }
   }
   @media screen and (max-width: 700px) {
+    gap: 15px;
     width: 100%;
     padding: 0 0 40px 0;
   }

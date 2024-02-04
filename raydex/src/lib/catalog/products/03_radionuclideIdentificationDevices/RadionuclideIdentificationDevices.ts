@@ -31,7 +31,8 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
         .shortDescription,
     fullDescription:
       multipurposeHandHeldRadiationMonitorIdentifierPm1401k33().fullDescription,
-
+    sliderDescription: `МКС-РМ1401К-3 является многофункциональным прибором, который объединяет в себе функции поискового прибора, радиометра, дозиметра, спектрометра и радиоизотопного идентификатора.
+      Возможности прибора позволяют решать широкий спектр задач радиационного контроля: от поиска и локализации источников ионизирующего излучения до измерения активности радионуклидов в обнаруженных источниках.`,
     tabs: {
       description: 'Описание',
       characteristics: 'Характеристики',
