@@ -13,8 +13,8 @@ export const Slide = (product: ProductItemType) => {
   return (
     <>
       <Flex justify='center' className={styles.slideWrapper}>
-        <Flex vertical justify='center' className={styles.leftSide} gap={40}>
-          <Flex vertical justify='center' style={{ padding: 32 }} gap={30}>
+        <Flex vertical justify='center' className={styles.leftSide}>
+          <Flex vertical justify='center' className={styles.leftSideContent}>
             <p className={styles.title}>{name}</p>
             <h2 className={styles.code}>{code}</h2>
             <p className={styles.description}>{sliderDescription}</p>

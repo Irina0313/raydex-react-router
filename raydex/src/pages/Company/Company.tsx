@@ -4,18 +4,29 @@ import { UsageCards } from '../../components/UsageCards';
 import { AboutSection } from '../../components/AboutSection';
 import { ContactsSection } from '../../components/ContactsSection';
 
+import styles from './company.module.scss';
+
 export const Company = () => {
   return (
-    <Flex vertical gap={40}>
-      <Slider />
-      <div style={{ backgroundColor: 'rgb(248, 248, 248)', padding: '40px' }}>
-        <UsageCards />
+    <Flex vertical>
+      <div className={`${styles.wrapper}`}>
+        <div className={`${styles.slider}`}>
+          <Slider />
+        </div>
       </div>
-      <div style={{ padding: '40px' }}>
+
+      <div className={`${styles.gray}`}>
+        <div className={`${styles.wrapper}`}>
+          <UsageCards />
+        </div>
+      </div>
+      <div className={`${styles.wrapper} `}>
         <AboutSection />
       </div>
-      <div style={{ backgroundColor: 'rgb(248, 248, 248)', padding: '40px' }}>
-        <ContactsSection />
+      <div className={` ${styles.gray}`}>
+        <div className={`${styles.wrapper}`}>
+          <ContactsSection />
+        </div>
       </div>
     </Flex>
   );

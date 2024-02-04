@@ -26,7 +26,7 @@ export default function ProductCardSwiper({
   //const swiperElRef = useRef(null);
 
   return (
-    <div>
+    <div className='productCardSwiper'>
       <Swiper
         cssMode={true}
         navigation={true}

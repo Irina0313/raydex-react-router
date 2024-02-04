@@ -1,9 +1,46 @@
 .contactsContainer {
-  padding: 0 50px 30px 50px;
+  padding: 30px 50px;
+
+  @media screen and (max-width: 700px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 30px 0;
+  }
+
+  .contacts {
+    justify-content: center;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+    }
+
+    .map {
+      width: 70%;
+
+      & iframe {
+        width: 100%;
+        height: 450px;
+      }
+
+      @media screen and (max-width: 850px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .cardContainer {
   width: 355px;
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 550px) {
+    border-radius: 0;
+  }
 }
 
 .grayText {

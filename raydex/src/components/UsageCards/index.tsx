@@ -1,6 +1,7 @@
-import { Card, Flex, Typography } from 'antd';
+import { Card, Typography } from 'antd';
 import { usageAreas } from '../../lib/constants';
 import { useNavigate } from 'react-router-dom';
+import styles from './usage.module.scss';
 
 const { Meta } = Card;
 
@@ -9,46 +10,101 @@ export const UsageCards = () => {
   const handleCardClick = (key: string) => {
     navigate(`/usage/${key}`);
   };
+
   return (
-    <div style={{ padding: '0 50px' }}>
+    <div className={styles.usageContainer}>
       {' '}
-      <Typography.Title
-        level={2}
-        style={{ fontWeight: 'bold', textAlign: 'left' }}
-      >
+      <Typography.Title level={2} className={styles.title}>
         Применение
       </Typography.Title>
-      <Flex wrap="wrap" gap={30} justify="center">
-        {usageAreas.map((a) => (
-          <Card
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              width: 400,
-            }}
-            onClick={() => handleCardClick(a.key)}
-            key={a.key}
-            hoverable
-            cover={<img alt={a.name} src={a.imgSrc} />}
-          >
-            <Meta
-              title={
-                <div
-                  style={{
-                    textWrap: 'wrap',
-                    overflow: 'visible',
-                    textOverflow: 'ellipsis',
-                    whiteSpace: 'nowrap',
-                  }}
+      <div className={styles.usageCardsWrapper}>
+        <div className={styles.leftSection}>
+          {usageAreas.map((a, index) => (
+            <>
+              {index !== 4 && (
+                <Card
+                  className={styles.card}
+                  onClick={() => handleCardClick(a.key)}
+                  key={a.key}
+                  hoverable
+                  cover={<img alt={a.name} src={a.imgSrc} />}
                 >
-                  {a.name}
-                </div>
-              }
-            />
-          </Card>
-        ))}
-      </Flex>
+                  <Meta
+                    title={
+                      <div
+                      /*  style={{
+                          textWrap: 'wrap',
+                          overflow: 'visible',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }} */
+                      >
+                        {a.name}
+                      </div>
+                    }
+                  />
+                </Card>
+              )}
+              {index === 4 && (
+                <Card
+                  className={`${styles.card} ${styles.lastCardLeft}`}
+                  onClick={() => handleCardClick(a.key)}
+                  key={a.key}
+                  hoverable
+                  cover={<img alt={a.name} src={a.imgSrc} />}
+                >
+                  <Meta
+                    title={
+                      <div
+                      /*  style={{
+                          textWrap: 'wrap',
+                          overflow: 'visible',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }} */
+                      >
+                        {a.name}
+                      </div>
+                    }
+                  />
+                </Card>
+              )}
+            </>
+          ))}
+        </div>
+        <div className={styles.rightSection}>
+          {usageAreas.map((a, index) => (
+            <>
+              {index === 4 && (
+                <Card
+                  className={`${styles.card} ${styles.lastCard}`}
+                  onClick={() => handleCardClick(a.key)}
+                  key={a.key}
+                  hoverable
+                  cover={<img alt={a.name} src={a.imgSrc} />}
+                >
+                  <Meta
+                    className={styles.meta}
+                    title={
+                      <div
+
+                      /*  style={{
+                          textWrap: 'wrap',
+                          overflow: 'visible',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }} */
+                      >
+                        {a.name}
+                      </div>
+                    }
+                  />
+                </Card>
+              )}
+            </>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

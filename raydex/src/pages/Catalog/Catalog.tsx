@@ -84,13 +84,7 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
                   <Card
                     hoverable
                     style={{ width: 400, height: 520, padding: '10px' }}
-                    cover={
-                      <img
-                        alt='Фото товара'
-                        /* src={`${p.subcategory?.[0]?.products?.[0]?.images?.[0]}`} */
-                        src={getImageURL(p)}
-                      />
-                    }
+                    cover={<img alt='Фото товара' src={getImageURL(p)} />}
                   >
                     <Meta
                       title={<div>{p.name}</div>}

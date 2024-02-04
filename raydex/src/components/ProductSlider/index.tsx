@@ -22,7 +22,7 @@ export default function ProductSlider({ images, pref }: ProductSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <>
+    <div className='productSwiper'>
       <Swiper
         spaceBetween={10}
         navigation={true}
@@ -53,6 +53,6 @@ export default function ProductSlider({ images, pref }: ProductSliderProps) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
