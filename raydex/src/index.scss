@@ -37,6 +37,7 @@ main {
   cursor: pointer;
 }
 .wrapper {
+  box-sizing: border-box;
   max-width: 1600px;
   width: 100%;
   padding: 0 50px;

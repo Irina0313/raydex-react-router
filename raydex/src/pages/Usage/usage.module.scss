@@ -1,0 +1,15 @@
+.tabs {
+  padding: 0 50px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.collapse {
+  border-radius: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

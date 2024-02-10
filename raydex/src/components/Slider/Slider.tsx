@@ -22,12 +22,12 @@ const productsForSlider = sliderItemsCodes
 
 export const Slider = () => {
   return (
-    <div className='mainSwiper'>
+    <div className="mainSwiper">
       <Swiper
         loop={true}
         cssMode={true}
         navigation={true}
-        /*  effect={'fade'} */
+        /*   effect={'fade'} */
         pagination={{
           clickable: true,
         }}
@@ -36,8 +36,8 @@ export const Slider = () => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         //className={styles.mainSwiper}
         //autoplay={true}
-        data-swiper-autoplay='5000'
-        data-swiper-pauseOnMouseEnter={true}
+        data-swiper-autoplay="5000"
+        //data-swiper-pauseonmouseenter={true}
       >
         {productsForSlider.length > 0 &&
           productsForSlider.map((p) => (

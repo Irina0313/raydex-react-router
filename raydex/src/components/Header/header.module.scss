@@ -1,10 +1,101 @@
 .header {
+  //position: relative;
   border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fffffff0;
 }
 
+.logoRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 20px 0 0 0;
+
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .burgerButton {
+      display: none;
+      justify-self: flex-start;
+
+      svg {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+      }
+
+      @media screen and (max-width: 700px) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .contacts {
+    @media screen and (max-width: 650px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+      justify-content: center;
+      row-gap: 5px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+.menuWrapper {
+  @media screen and (max-width: 700px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-out;
+
+  height: 100vh;
+  background-color: #fff;
+
+  & .hidden {
+    display: none;
+    left: -1000px;
+    //transform: translateX(-100%);
+    width: 0;
+    aside {
+      display: none !important;
+    }
+  }
+
+  & .visible {
+    transform: translateX(0);
+  }
+
+  .burgerMenuContent {
+    transition: all 0.3s ease-out;
+    min-width: 100vw !important;
+
+    > .hidden {
+      min-width: 0 !important;
+      // width: 0;
+    }
+  }
 }

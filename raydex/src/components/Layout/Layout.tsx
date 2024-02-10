@@ -7,16 +7,12 @@ import FooterComponent from '../Footer';
 import styles from './styles.module.scss';
 
 export const Layout = () => (
-  <html lang='ru'>
-    <body>
-      <ConfigProvider theme={myTheme}>
-        <HeaderComponent />
-        <BreadcrumbComponent />
-        <main className={styles.main}>
-          <Outlet />
-        </main>
-        <FooterComponent />
-      </ConfigProvider>
-    </body>
-  </html>
+  <ConfigProvider theme={myTheme}>
+    <HeaderComponent />
+    <BreadcrumbComponent />
+    <main className={styles.main}>
+      <Outlet />
+    </main>
+    <FooterComponent />
+  </ConfigProvider>
 );

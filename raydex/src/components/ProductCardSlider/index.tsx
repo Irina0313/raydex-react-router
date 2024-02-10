@@ -37,12 +37,21 @@ export default function ProductCardSwiper({
         className="mySwiper"
         zoom={true}
         loop={true}
+        style={{
+          height: '70%',
+          padding: '10px 0 30px 0',
+          borderRadius: '10px',
+        }}
       >
         {images.map((p) => (
-          <SwiperSlide style={{ padding: '20px 40px 30px' }}>
+          <SwiperSlide>
             <img
               src={`${imagePathPrefix}${p}`}
-              style={{ objectFit: 'contain', width: '100%', height: '100%' }}
+              style={{
+                objectFit: 'contain',
+                width: '100%',
+                height: '280px',
+              }}
             />
           </SwiperSlide>
         ))}

@@ -14,39 +14,37 @@ function App() {
   };
 
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<pages.Company />} />
-          <Route path='contacts' element={<pages.Contacts />} />
-          <Route
-            path='catalog'
-            element={
-              <Catalog
-                isProductPage={isProductPage}
-                handleProductPage={handleProductPage}
-              />
-            }
-          >
-            <Route
-              path=':category'
-              element={<pages.Category handleProductPage={handleProductPage} />}
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<pages.Company />} />
+        <Route path="contacts" element={<pages.Contacts />} />
+        <Route
+          path="catalog"
+          element={
+            <Catalog
+              isProductPage={isProductPage}
+              handleProductPage={handleProductPage}
             />
-            <Route
-              path=':category/:products'
-              element={<pages.Products handleProductPage={handleProductPage} />}
-            />
-          </Route>
+          }
+        >
           <Route
-            path='catalog/:category/:products/:product'
-            element={<pages.Product handleProductPage={handleProductPage} />}
+            path=":category"
+            element={<pages.Category handleProductPage={handleProductPage} />}
           />
-          <Route path='usage' element={<pages.Usage />}>
-            <Route path=':area' element={<pages.UsageArea />} />
-          </Route>
+          <Route
+            path=":category/:products"
+            element={<pages.Products handleProductPage={handleProductPage} />}
+          />
         </Route>
-      </Routes>
-    </>
+        <Route
+          path="catalog/:category/:products/:product"
+          element={<pages.Product handleProductPage={handleProductPage} />}
+        />
+        <Route path="usage" element={<pages.Usage />}>
+          <Route path=":area" element={<pages.UsageArea />} />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 

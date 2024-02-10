@@ -19,37 +19,34 @@ export const UsageCards = () => {
       </Typography.Title>
       <div className={styles.usageCardsWrapper}>
         <div className={styles.leftSection}>
-          {usageAreas.map((a, index) => (
-            <>
-              {index !== 4 && (
-                <Card
-                  className={styles.card}
-                  onClick={() => handleCardClick(a.key)}
-                  key={a.key}
-                  hoverable
-                  cover={<img alt={a.name} src={a.imgSrc} />}
-                >
-                  <Meta title={<div>{a.name}</div>} />
-                </Card>
-              )}
-              {index === 4 && (
-                <Card
-                  className={`${styles.card} ${styles.lastCardLeft}`}
-                  onClick={() => handleCardClick(a.key)}
-                  key={a.key}
-                  hoverable
-                  cover={<img alt={a.name} src={a.imgSrc} />}
-                >
-                  <Meta title={<div>{a.name}</div>} />
-                </Card>
-              )}
-            </>
-          ))}
+          {usageAreas.map((a, index) =>
+            index !== 4 ? (
+              <Card
+                className={styles.card}
+                onClick={() => handleCardClick(a.key)}
+                key={a.key}
+                hoverable
+                cover={<img alt={a.name} src={a.imgSrc} />}
+              >
+                <Meta title={<div>{a.name}</div>} />
+              </Card>
+            ) : (
+              <Card
+                className={`${styles.card} ${styles.lastCardLeft}`}
+                onClick={() => handleCardClick(a.key)}
+                key={a.key}
+                hoverable
+                cover={<img alt={a.name} src={a.imgSrc} />}
+              >
+                <Meta title={<div>{a.name}</div>} />
+              </Card>
+            )
+          )}
         </div>
         <div className={styles.rightSection}>
-          {usageAreas.map((a, index) => (
-            <>
-              {index === 4 && (
+          {usageAreas.map(
+            (a, index) =>
+              index === 4 && (
                 <Card
                   className={`${styles.card} ${styles.lastCard}`}
                   onClick={() => handleCardClick(a.key)}
@@ -59,9 +56,8 @@ export const UsageCards = () => {
                 >
                   <Meta className={styles.meta} title={<div>{a.name}</div>} />
                 </Card>
-              )}
-            </>
-          ))}
+              )
+          )}
         </div>
       </div>
     </div>

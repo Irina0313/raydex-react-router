@@ -3,7 +3,7 @@ import type { MenuProps } from 'antd/es/menu';
 import { CatalogItemType, catalog } from '../../lib/catalog/catalog';
 import { Link, redirect } from 'react-router-dom';
 import { findPathByName } from '../../utils/getFullPath';
-
+import styles from './catalogNavigation.module.scss';
 type MenuItem = Required<MenuProps>['items'][number];
 
 function getItem(
@@ -44,7 +44,7 @@ export default function CatalogNavigation() {
           style={{
             display: 'inline-block',
             width: '100%',
-            height: '100%',
+
             color: 'black',
           }}
         >
@@ -62,9 +62,15 @@ export default function CatalogNavigation() {
   return (
     <Menu
       onClick={(e) => handleMenuClick(e.key)}
-      mode='inline'
-      style={{ width: 350, textAlign: 'left' }}
+      mode="inline"
+      style={{
+        width: 350,
+        textAlign: 'left',
+        padding: '20px 0 0 0',
+        height: '100%',
+      }}
       items={items}
+      className={`${styles.menu}`}
     />
   );
 }

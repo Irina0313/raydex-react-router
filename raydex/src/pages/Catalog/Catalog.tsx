@@ -8,6 +8,9 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
 import CatalogNavigation from '../../components/CatalogNavigation';
+import styles from './catalog.module.scss';
+
+const { sider, card } = styles;
 
 const { Meta } = Card;
 
@@ -69,22 +72,22 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
   };
 
   return (
-    <Layout hasSider>
+    <Layout hasSider style={{ borderTop: '1px solid rgb(240, 240, 240)' }}>
       {!isProductPage && (
-        <Sider style={siderStyle} width={350}>
+        <Sider style={siderStyle} width={350} className={sider}>
           <CatalogNavigation />
         </Sider>
       )}
       <Layout>
         <Content style={{ margin: '24px 16px', overflow: 'initial' }}>
-          <Flex wrap='wrap' gap={50} justify='center'>
+          <Flex wrap="wrap" gap={50} justify="center">
             {location.pathname === '/catalog' &&
               catalog.map((p) => (
                 <Link key={p.id} to={`${findPathByName(p.name)}`}>
                   <Card
                     hoverable
-                    style={{ width: 400, height: 520, padding: '10px' }}
-                    cover={<img alt='Фото товара' src={getImageURL(p)} />}
+                    cover={<img alt="Фото товара" src={getImageURL(p)} />}
+                    className={card}
                   >
                     <Meta
                       title={<div>{p.name}</div>}

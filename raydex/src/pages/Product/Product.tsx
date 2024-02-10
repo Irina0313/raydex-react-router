@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
-import { Tabs } from 'antd';
+import { Collapse, Tabs } from 'antd';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { getPage } from '../../utils/getPage';
-import MyGallery from '../../components/ProductSlider2';
+import MyGallery from '../../components/ProductSlider';
 
 interface IProductParams {
   handleProductPage: (param: boolean) => void;
@@ -57,10 +57,9 @@ export const Product = ({ handleProductPage }: IProductParams) => {
   const prevPagePath = (): string => {
     return path.split('/').slice(0, -1).join('/');
   };
-  console.log(images);
 
   return (
-    <div style={{ padding: '0 50px' }}>
+    <div className={styles.productPage} style={{ padding: '0 50px' }}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
           {/* {images && <ProductSlider images={images} pref='../../../' />} */}
@@ -97,19 +96,33 @@ export const Product = ({ handleProductPage }: IProductParams) => {
       </div>
       <div className={styles.bottomSection} ref={tabsSectionRef}>
         {tabs && (
-          <Tabs
-            onChange={onChange}
-            type="card"
-            items={Object.values(tabs).map((key) => {
-              return {
-                id: `${key}`,
-                label: `${key}`,
-                key: key,
-                children: getTabContent(key),
-              };
-            })}
-            activeKey={activeTab}
-          />
+          <>
+            <Tabs
+              className={styles.tabs}
+              onChange={onChange}
+              type="card"
+              items={Object.values(tabs).map((key) => {
+                return {
+                  id: `${key}`,
+                  label: `${key}`,
+                  key: key,
+                  children: getTabContent(key),
+                };
+              })}
+              activeKey={activeTab}
+            />
+            <Collapse
+              className={styles.collapse}
+              items={Object.values(tabs).map((key) => {
+                return {
+                  id: `${key}`,
+                  label: `${key}`,
+                  key: key,
+                  children: getTabContent(key),
+                };
+              })}
+            />
+          </>
         )}
       </div>
       <div className={styles.detailsLinkContainer}>

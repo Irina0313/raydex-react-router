@@ -10,7 +10,7 @@ export const Company = () => {
   return (
     <Flex vertical>
       <div className={`${styles.wrapper}`}>
-        <div className={`${styles.slider}`}>
+        <div>
           <Slider />
         </div>
       </div>

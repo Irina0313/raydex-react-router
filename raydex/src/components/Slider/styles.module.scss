@@ -1,32 +1,40 @@
 .slideWrapper {
   padding: 0 25px;
 
-  @media screen and (max-width: 700px) {
-    flex-direction: column-reverse;
+  @media screen and (max-width: 1350px) {
     padding: 0;
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column-reverse;
   }
 }
 
 .rightSide {
-  width: 40%;
-  padding: 0 0 40px 0;
+  width: 35%;
+  padding: 40px;
 
   img {
-    object-fit: cover;
-    //height: 50vw;
+    object-fit: contain;
   }
 
   @media screen and (max-width: 1350px) {
-    width: 30%;
+    width: 40%;
   }
-  @media screen and (max-width: 700px) {
-    width: 100%;
-    padding: 0 0 10px 0;
+
+  @media screen and (max-width: 1250px) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 60%;
+    padding: 20px;
+    align-self: center;
   }
 }
 
 .leftSide {
-  width: 55%;
+  width: 65%;
   gap: 40px;
 
   &Content {
@@ -35,10 +43,11 @@
   }
 
   @media screen and (max-width: 1350px) {
-    width: 65%;
+    width: 55%;
   }
 
   @media screen and (max-width: 1250px) {
+    width: 50%;
     gap: 30px;
 
     &Content {
@@ -55,7 +64,7 @@
       gap: 15px;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 750px) {
     gap: 15px;
     width: 100%;
     padding: 0 0 40px 0;

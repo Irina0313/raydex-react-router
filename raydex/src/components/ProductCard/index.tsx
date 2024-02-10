@@ -9,6 +9,7 @@ import { findPathByName } from '../../utils/getFullPath';
 import ProductCardSwiper from '../ProductCardSlider';
 import { useState } from 'react';
 
+import styles from './productCard.module.scss';
 const { Meta } = Card;
 
 interface ProductCardProps {
@@ -45,17 +46,18 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 hoverable
                 style={{
                   width: 400,
+
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
                 }}
                 cover={
-                  <>
+                  <div className={styles.cardContainer}>
                     <ProductCardSwiper
                       images={p.images}
                       imagePathPrefix={imagePathPrefix}
                     />
-                  </>
+                  </div>
                 }
               >
                 <Meta
@@ -68,7 +70,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                       {p.name}
                     </Link>
                   }
-                  description={`${p.status}`}
+                  /*  description={`${p.status}`} */
                 />
                 <div style={{ margin: '10px 0 0 0' }}>
                   <CustomButton text="Заказать" handleClick={showModal} />
