@@ -79,7 +79,7 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
         </Sider>
       )}
       <Layout>
-        <Content style={{ margin: '24px 16px', overflow: 'initial' }}>
+        <Content>
           <Flex wrap="wrap" gap={50} justify="center">
             {location.pathname === '/catalog' &&
               catalog.map((p) => (
