@@ -55,8 +55,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         <b>системы линейных перемещений</b>.
       </p>
       <Image
-        width={900}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/lm2qeyu5uck3k08bwalg0ksofhvz1ka1.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/lm2qeyu5uck3k08bwalg0ksofhvz1ka1.webp"
       />
       <p>
         Управление выбором источника в облучателе, выводом выбранного источника
@@ -67,8 +67,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         (ПК).
       </p>
       <Image
-        width={900}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/x0m4h6i0xhba5fh4da0vti9os3n8bew8.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/x0m4h6i0xhba5fh4da0vti9os3n8bew8.webp"
       />
 
       <h2>Состав установки</h2>
@@ -89,8 +89,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
       </ol>
 
       <Image
-        width={900}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sch.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sch.webp"
       />
 
       <h2>Облучатель</h2>
@@ -126,8 +126,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
       </p>
 
       <Image
-        width={800}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_3.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_3.webp"
       />
 
       <p>
@@ -170,8 +170,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         осуществляется специальным приводом и программируемым контроллером.
       </p>
       <Image
-        width={400}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/2qzl5h8scfu12192spovsh3vp2yteu1j.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/2qzl5h8scfu12192spovsh3vp2yteu1j.webp"
       />
       <h2>Система управления установкой</h2>
       <p>
@@ -186,8 +186,8 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
       </p>
 
       <Image
-        width={900}
-        src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/g03vnr4zge1sx78lf15n7lpzdm04fszm.webp'
+        style={{ width: '50vw' }}
+        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/g03vnr4zge1sx78lf15n7lpzdm04fszm.webp"
       />
       <h2>Система радиационного контроля</h2>
       <p>
@@ -202,14 +202,22 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         с детекторов и сигнализация о превышении установленных по каждому
         детектору порогов.
       </p>
-      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          columnGap: '10px',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
         <Image
-          width={360}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9fm4ceuy2qp2omja2h0p4f6248rpbfox.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9fm4ceuy2qp2omja2h0p4f6248rpbfox.webp"
         />
         <Image
-          width={360}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_srk2.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_srk2.webp"
         />
       </div>
 
@@ -220,14 +228,22 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         визира и отсчетной шкалы, наблюдать за процессами в помещении, а также
         дистанционно управлять камерой наблюдения за показаниями приборов.
       </p>
-      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          columnGap: '10px',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
         <Image
-          width={479}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sv1.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sv1.webp"
         />
         <Image
-          width={479}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/8ets28cv9oj17jb7yt5wrcb2ca9wxuw3.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/8ets28cv9oj17jb7yt5wrcb2ca9wxuw3.webp"
         />
       </div>
 
@@ -236,22 +252,30 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         Представляет собой набор механизмов и устройств, которые совместно с
         системой управления обеспечивают защиту персонала от облучения.
       </p>
-      <div style={{ display: 'flex', alignItems: 'center', columnGap: '10px' }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          columnGap: '10px',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
         <Image
-          width={257}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb1.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb1.webp"
         />
         <Image
-          width={257}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb2.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb2.webp"
         />
         <Image
-          width={257}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb3.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb3.webp"
         />
         <Image
-          width={257}
-          src='../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb4.webp'
+          style={{ width: '50vw' }}
+          src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb4.webp"
         />
       </div>
 
