@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Layout, Menu, Flex, Button } from 'antd';
-import {
-  LinkedinOutlined,
-  PhoneOutlined,
-  MailOutlined,
-} from '@ant-design/icons';
+import { PhoneOutlined, MailOutlined } from '@ant-design/icons';
 import styles from './header.module.scss';
 import { pages } from '../../utils/getPage';
 const { Header } = Layout;
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 
 import Logo from '../Logo';
 import { Link } from 'react-router-dom';
