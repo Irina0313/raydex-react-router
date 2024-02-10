@@ -4,6 +4,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { getPage } from '../../utils/getPage';
 import MyGallery from '../../components/ProductSlider';
+import '../../index.scss';
 
 interface IProductParams {
   handleProductPage: (param: boolean) => void;
@@ -59,7 +60,7 @@ export const Product = ({ handleProductPage }: IProductParams) => {
   };
 
   return (
-    <div className={styles.productPage} style={{ padding: '0 50px' }}>
+    <div className={`wrapper ${styles.productPage}`}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
           {/* {images && <ProductSlider images={images} pref='../../../' />} */}
