@@ -73,11 +73,11 @@ export const pm9300 = () => {
 
       <Image
         style={{ width: '50vw' }}
-        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/qjbp2mtp7pdjz1gyyxl5y40tq3u3595n.webp"
+        src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/qjbp2mtp7pdjz1gyyxl5y40tq3u3595n.webp"
       />
       <Image
         style={{ width: '50vw' }}
-        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/881zx610wtmxtan9b6cokbj8alid65tx.webp"
+        src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/881zx610wtmxtan9b6cokbj8alid65tx.webp"
       />
       <p>
         Загрузка приборов на рабочий стол СЛП осуществляется через дверь (3)
@@ -116,7 +116,7 @@ export const pm9300 = () => {
       </p>
 
       <Image
-        src="../../../../../../public/assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/3en5tkq2icfdlhrybkdrc9b1yyjt506m.webp"
+        src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/pm9300/images/3en5tkq2icfdlhrybkdrc9b1yyjt506m.webp"
         style={{ width: '50vw' }}
       />
     </div>
