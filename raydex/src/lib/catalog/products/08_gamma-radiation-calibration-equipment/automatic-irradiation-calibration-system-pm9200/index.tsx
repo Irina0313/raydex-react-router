@@ -212,11 +212,11 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         }}
       >
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '30vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9fm4ceuy2qp2omja2h0p4f6248rpbfox.webp"
         />
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '30vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_srk2.webp"
         />
       </div>
@@ -238,11 +238,11 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         }}
       >
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '30vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_sv1.webp"
         />
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '30vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/8ets28cv9oj17jb7yt5wrcb2ca9wxuw3.webp"
         />
       </div>
@@ -262,19 +262,19 @@ export const automaticIrradiationCalibrationSystemPm9200 = () => {
         }}
       >
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '20vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb1.webp"
         />
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '20vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb2.webp"
         />
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '20vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb3.webp"
         />
         <Image
-          style={{ width: '50vw' }}
+          style={{ width: '20vw' }}
           src="../../../../../.././assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/images/9200_ssb4.webp"
         />
       </div>
