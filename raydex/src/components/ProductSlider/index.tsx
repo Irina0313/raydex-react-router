@@ -1,58 +1,32 @@
-import { useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
+import './productSlider.scss';
 
-import './styles.scss';
-
-// import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-
-interface ProductSliderProps {
-  images: string[];
-  pref: string;
+interface MyGalleryProps {
+  imagesArr: string[];
+  pref?: string;
 }
 
-export default function ProductSlider({ images, pref }: ProductSliderProps) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+const getImages = (imagesArr: string[], pref = ''): ReactImageGalleryItem[] => {
+  return imagesArr.map((image) => ({
+    original: `${pref}${image}`,
+    originalAlt: 'Фото продукта',
+    thumbnailAlt: 'Фото продукта',
+    thumbnail: `${pref}${image}`,
+
+    thumbnailClass: `sliderImage`,
+    originalClass: `sliderOriginalImage`,
+  }));
+};
+
+const MyGallery = ({ imagesArr, pref }: MyGalleryProps) => {
+  const images = getImages(imagesArr, pref);
 
   return (
-    <div className='productSwiper'>
-      <Swiper
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className='mySwiper2'
-        loop={true}
-      >
-        {images.map((p) => (
-          <SwiperSlide key={p}>
-            <img src={`${pref}${p}`} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <Swiper
-        onSwiper={() => setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={3}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className='mySwiper3'
-        loop={true}
-      >
-        {images.map((p) => (
-          <SwiperSlide key={p}>
-            <img src={`${pref}${p}`} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="product-page-slider">
+      <ImageGallery items={images} />
     </div>
   );
-}
+};
+
+export default MyGallery;

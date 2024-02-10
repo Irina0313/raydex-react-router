@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { getPage } from '../../utils/getPage';
-import ProductSlider from '../../components/ProductSlider';
+import MyGallery from '../../components/ProductSlider2';
 
 interface IProductParams {
   handleProductPage: (param: boolean) => void;
@@ -12,7 +12,7 @@ interface IProductParams {
 export const Product = ({ handleProductPage }: IProductParams) => {
   handleProductPage(true);
   const params = useParams();
-  //console.log(params);
+
   const { product, products } = params;
 
   const tabsSectionRef = useRef<HTMLDivElement>(null);
@@ -57,12 +57,14 @@ export const Product = ({ handleProductPage }: IProductParams) => {
   const prevPagePath = (): string => {
     return path.split('/').slice(0, -1).join('/');
   };
+  console.log(images);
 
   return (
     <div style={{ padding: '0 50px' }}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
-          {images && <ProductSlider images={images} pref='../../../' />}
+          {/* {images && <ProductSlider images={images} pref='../../../' />} */}
+          {images && <MyGallery imagesArr={images} pref="../../../" />}
         </div>
         <div className={styles.shortDescription}>
           {productItem &&
@@ -70,7 +72,7 @@ export const Product = ({ handleProductPage }: IProductParams) => {
             productItem.shortDescription}
           <Link
             className={styles.detailsLink}
-            to='#description'
+            to="#description"
             onClick={() => handleDetailsLinkClick('Описание')}
           >
             Подробности
@@ -84,7 +86,7 @@ export const Product = ({ handleProductPage }: IProductParams) => {
 
               <Link
                 className={styles.detailsLink}
-                to='#characteristics'
+                to="#characteristics"
                 onClick={() => handleDetailsLinkClick('Характеристики')}
               >
                 Все характеристики
@@ -97,7 +99,7 @@ export const Product = ({ handleProductPage }: IProductParams) => {
         {tabs && (
           <Tabs
             onChange={onChange}
-            type='card'
+            type="card"
             items={Object.values(tabs).map((key) => {
               return {
                 id: `${key}`,

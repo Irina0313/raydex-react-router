@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                   description={`${p.status}`}
                 />
                 <div style={{ margin: '10px 0 0 0' }}>
-                  <CustomButton text='Заказать' handleClick={showModal} />
+                  <CustomButton text="Заказать" handleClick={showModal} />
                 </div>
               </Card>
             )

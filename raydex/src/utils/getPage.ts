@@ -35,7 +35,7 @@ export function getPage(path: string):
       .flatMap((prod) => getProducts(prod?.productsID))
       .find((prodPath) => prodPath?.path === path) ||
     usageAreas.find((p) => p.key === path);
-  console.log(path, page);
+  //console.log(path, page);
   return page || null;
 }
 
