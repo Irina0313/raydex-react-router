@@ -4,7 +4,7 @@ export const electronicPersonalDosimeterPM1300 = () => {
   const shortDescription = (
     <div className={styles.shortDescriptionContainer}>
       <p>
-        Дозиметр индивидуальный ДКГ-PM1300 является электронным
+        Дозиметр является электронным
         прямопоказывающим средством измерения, предназначенным для оперативного
         контроля радиационной обстановки и дозовых нагрузок персонала.
       </p>

@@ -54,7 +54,7 @@ export const personalDosimetrs: ProductItemType[] = [
     path: 'x-ray-and-gamma-radiation-personal-dosimeter-pm1611',
     code: 'ДКГ-PM1611',
     images: [
-      './assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-pm1611/images/13o72sgjqdz4jy3cwxikxs0szl35mgoq.webp',
+      './assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-pm1611/images/13o72sgjqdz4jy3cwxikxs0szl35mgoq.jpg',
       './assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-pm1611/images/052u69ywi19128rg40t1vg1j4y2z080q.webp',
       './assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-pm1611/images/xlj9if6bpffably32hpxc46254ypo1td.webp',
       './assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-pm1611/images/8ehvq8hay2b7g1avowvqc8bhbfqx7y31.webp',
@@ -65,10 +65,7 @@ export const personalDosimetrs: ProductItemType[] = [
       xRayAndGammaRadiationPersonalDosimeterPM1611().shortDescription,
     fullDescription:
       xRayAndGammaRadiationPersonalDosimeterPM1611().fullDescription,
-    sliderDescription: `Дозиметр индивидуальный рентгеновского и гамма излучений ДКГ-PM1611
-      Дозиметр предназначен для измерения индивидуального эквивалента дозы
-      Hp(10) (ЭД) и мощности индивидуального эквивалента дозы Ĥp(10) (МЭД)
-      непрерывного и импульсного рентгеновского и гамма-излучения.`,
+    sliderDescription: `Дозиметр предназначен для измерения индивидуального эквивалента дозы и мощности дозы непрерывного и импульсного рентгеновского и гамма- излучений.`,
     tabs: {
       description: 'Описание',
       characteristics: 'Характеристики',

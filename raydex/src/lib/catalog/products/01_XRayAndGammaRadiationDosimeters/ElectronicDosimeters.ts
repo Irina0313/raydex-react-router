@@ -21,7 +21,7 @@ export interface ProductItemType {
   status: string;
   shortDescription: JSX.Element | string;
   fullDescription: JSX.Element;
-  sliderDescription?: string;
+  sliderDescription?: JSX.Element | string;
   tabs: TabsType;
   characteristics?: JSX.Element;
   fullCharacteristics?: JSX.Element;

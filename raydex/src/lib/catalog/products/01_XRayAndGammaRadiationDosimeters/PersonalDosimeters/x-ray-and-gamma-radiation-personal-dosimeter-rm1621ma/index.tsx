@@ -5,7 +5,6 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621ma = () => {
   const shortDescription = (
     <div className={styles.shortDescriptionContainer}>
       <p>
-        Дозиметр индивидуальный рентгеновского и гамма излучений ДКГ-PM1621MА
         Дозиметр предназначен для измерения индивидуального эквивалента дозы и
         мощности дозы гамма и рентгеновского излучений, поиска, обнаружения и
         локализации радиоактивных и ядерных материалов. Прибор выпускается в
@@ -19,19 +18,19 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621ma = () => {
       <h2>Принцип работы</h2>
       <p>
         Дозиметр индивидуальный рентгеновского и гамма излучений{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621">
           ДКГ-PM1621
         </Link>{' '}
         выпускается в четырех модификациях (
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621">
           ДКГ-PM1621
         </Link>
         ,
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
           ДКГ-PM1621А
         </Link>
         ,
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m">
           ДКГ-PM1621М
         </Link>
         ,{' '}
@@ -46,11 +45,11 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621ma = () => {
       </p>
       <p>
         Модификация{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
           ДКГ-РМ1621A
         </Link>{' '}
         имеет расширенный диапазон измерения МЭД до 1 Зв/ч (
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
           ДКГ-РМ1621A
         </Link>
         ) в энергетическом диапазоне от 10 кэВ до 20 МэВ.
@@ -67,11 +66,11 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621ma = () => {
       </p>
       <p>
         Дозиметры{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621">
           ДКГ-PM1621
         </Link>{' '}
         и{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
           ДКГ-РМ1621A
         </Link>{' '}
         оснащены энергонезависимой памятью, в которой сохраняется до 1000
@@ -93,15 +92,15 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621ma = () => {
       <h2>Модификации ДКГ-PM1621M и ДКГ-PM1621MA</h2>
       <p>
         В дополнение к функциям дозиметров{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621">
           ДКГ-PM1621
         </Link>
         /
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
           ДКГ-РМ1621A
         </Link>
         , модификации{' '}
-        <Link to='/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m">
           ДКГ-PM1621М
         </Link>{' '}
         и ДКГ-РМ1621МА имеют дополнительный поисковый режим и встроенную

@@ -5,10 +5,14 @@
     .swiper-button-prev,
     .swiper-button-next {
       z-index: 20;
-      top: calc(100% - 20px);
+      top: 50%;
 
       @media screen and (max-width: 800px) {
-        top: calc(100% - 20px);
+        top: 20%;
+      }
+
+      @media screen and (max-width: 500px) {
+        top: 10%;
       }
     }
 
@@ -25,7 +29,7 @@
     }
 
     .swiper-button-prev {
-      left: 80%;
+      left: 0%;
 
       &:after {
         width: 35px;
@@ -40,6 +44,7 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
+
     height: auto;
 
     /* Center slide text vertically */

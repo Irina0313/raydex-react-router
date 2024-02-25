@@ -73,7 +73,7 @@ export const usageDescription = (areaKey: string) => {
             дозиметрические величины:
           </Typography.Paragraph>
           <div style={{ maxWidth: '1000px' }}>
-            <img src="./assets/usage/y2fivslo1r1o7r0beain6pvfl4tfit6q.webp"></img>
+            <img src="../../../../../.././assets/usage/y2fivslo1r1o7r0beain6pvfl4tfit6q.webp"></img>
           </div>
 
           <Typography.Paragraph>

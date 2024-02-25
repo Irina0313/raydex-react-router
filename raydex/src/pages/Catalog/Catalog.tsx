@@ -33,7 +33,7 @@ const productsAmount = (
 
   const categories = getItemsAmount();
 
-  let items = 'товар';
+  let items = 'прибор';
   const ends = {
     ов: ['0', '5', '6', '7', '8', '9'],
     а: ['2', '3', '4'],
@@ -80,7 +80,12 @@ const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
       )}
       <Layout>
         <Content>
-          <Flex wrap="wrap" gap={50} justify="center">
+          <Flex
+            wrap="wrap"
+            gap={50}
+            justify="center"
+            style={{ padding: '20px 0 0 0' }}
+          >
             {location.pathname === '/catalog' &&
               catalog.map((p) => (
                 <Link key={p.id} to={`${findPathByName(p.name)}`}>

@@ -1,7 +1,7 @@
-import { Form, Input } from "antd";
+import { Form, Input } from 'antd';
 
-import styles from "./contactForm.module.scss";
-import CustomButton from "../../button";
+import styles from './contactForm.module.scss';
+import CustomButton from '../../button';
 
 const { TextArea } = Input;
 const formItemLayout = {
@@ -16,23 +16,25 @@ const formItemLayout = {
 };
 
 const onFinishFailed = (errorInfo: unknown) => {
-  console.log("Failed:", errorInfo);
+  console.log('Failed:', errorInfo);
 };
 
 interface FieldType {
   company?: string;
   surname?: string;
   name?: string;
+  phone: string;
+  email: string;
   middleName?: string;
   message?: string;
 }
 
 const ContactForm = () => {
   const [form] = Form.useForm();
-  const formAction = "../../../php/mail.php";
+  const formAction = '../../../php/mail.php';
 
   const onFinish = async (values: unknown) => {
-    console.log("Success:", values);
+    console.log('Success:', values);
 
     // Update the form action dynamically
     form.submit();
@@ -40,9 +42,9 @@ const ContactForm = () => {
     try {
       // Send form data to the server using fetch
       const response = await fetch(formAction, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(values),
       });
@@ -50,12 +52,12 @@ const ContactForm = () => {
       // Check if the request was successful (status code 200-299)
       if (response.ok) {
         // Additional logic after successful form submission
-        console.log("Form submitted successfully!");
+        console.log('Form submitted successfully!');
       } else {
-        console.error("Failed to submit form:", response.statusText);
+        console.error('Failed to submit form:', response.statusText);
       }
     } catch (e) {
-      console.error("Error submitting form:", e);
+      console.error('Error submitting form:', e);
     }
   };
 
@@ -82,8 +84,7 @@ const ContactForm = () => {
           name="company"
           rules={[
             {
-              required: true,
-              message: "Пожалуйста, введите название компании",
+              required: false,
             },
           ]}
         >
@@ -93,14 +94,14 @@ const ContactForm = () => {
         <Form.Item<FieldType>
           label="Фамилия"
           name="surname"
-          rules={[{ required: true, message: "Пожалуйста, введите фамилию" }]}
+          rules={[{ required: false }]}
         >
           <Input />
         </Form.Item>
         <Form.Item<FieldType>
           label="Имя"
           name="name"
-          rules={[{ required: true, message: "Пожалуйста, введите имя" }]}
+          rules={[{ required: true, message: 'Пожалуйста, заполните поле' }]}
         >
           <Input />
         </Form.Item>
@@ -114,9 +115,27 @@ const ContactForm = () => {
         </Form.Item>
 
         <Form.Item<FieldType>
+          label="Телефон"
+          name="phone"
+          rules={[{ required: true, message: 'Пожалуйста, заполните поле' }]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item<FieldType>
+          label="Email"
+          name="email"
+          rules={[
+            { type: 'email', required: false, message: 'Некорректный email' },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+
+        <Form.Item<FieldType>
           label="Вопрос"
           name="message"
-          rules={[{ required: true, message: "Пожалуйста, введите вопрос" }]}
+          rules={[{ required: true, message: 'Пожалуйста, введите вопрос' }]}
         >
           <TextArea rows={4} />
         </Form.Item>

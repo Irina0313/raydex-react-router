@@ -63,10 +63,12 @@ export const Product = ({ handleProductPage }: IProductParams) => {
     <div className={`wrapper ${styles.productPage}`}>
       <div className={styles.topSection}>
         <div className={styles.sliderContainer}>
-          {/* {images && <ProductSlider images={images} pref='../../../' />} */}
           {images && <MyGallery imagesArr={images} pref="../../../" />}
         </div>
         <div className={styles.shortDescription}>
+          <h2 style={{ margin: '0 0 20px 0', color: '#2e69ad' }}>
+            {productItem && productItem.name}
+          </h2>
           {productItem &&
             'shortDescription' in productItem &&
             productItem.shortDescription}

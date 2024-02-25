@@ -23,7 +23,7 @@ const BreadcrumbComponent = () => {
     {
       href: '/',
       title: (
-        <Link to='/'>
+        <Link to="/">
           <HomeOutlined />
         </Link>
       ),
@@ -42,7 +42,7 @@ const BreadcrumbComponent = () => {
   return (
     <>
       {!isHomePage && (
-        <div className='wrapper'>
+        <div className="wrapper">
           <Breadcrumb className={styles.breadcrumb} items={breadcrumbItems} />
         </div>
       )}

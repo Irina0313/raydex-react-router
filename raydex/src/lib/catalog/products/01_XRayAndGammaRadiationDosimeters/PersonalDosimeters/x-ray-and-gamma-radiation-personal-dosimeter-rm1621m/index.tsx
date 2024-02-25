@@ -18,27 +18,30 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621m = () => {
     <div className={styles.fullDescription}>
       <h2>Принцип работы</h2>
       <p>
-        Дозиметр индивидуальный рентгеновского и гамма излучений{' '}
-        <Link to='catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
-          ДКГ-PM1621
-        </Link>
-        выпускается в четырех модификациях ({' '}
-        <Link to='catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621'>
-          ДКГ-PM1621
-        </Link>
-        ,ДКГ-PM1621А,{' '}
-        <Link to='catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m'>
+        Дозиметр индивидуальный рентгеновского и гамма излучений ДКГ-PM1621
+        выпускается в четырех модификациях: ДКГ-PM1621,{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
+          ДКГ-PM1621А,
+        </Link>{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m">
           ДКГ-PM1621М
         </Link>
         ,{' '}
-        <Link to='catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621ma/'>
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621ma/">
           ДКГ-PM1621МА
         </Link>
-        ).
+        .
       </p>
       <p>
-        Модификация ДКГ-PM1621А имеет расширенный диапазон измерения МЭД до 1
-        Зв/ч (ДКГ-РМ1621A) в энергетическом диапазоне от 10 кэВ до 20 МэВ.
+        Модификация{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
+          ДКГ-PM1621А,
+        </Link>{' '}
+        имеет расширенный диапазон измерения МЭД до 1 Зв/ч (
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
+          ДКГ-PM1621А,
+        </Link>
+        ) в энергетическом диапазоне от 10 кэВ до 20 МэВ.
       </p>
       <p>
         В дозиметрах предусмотрена возможность установки по два независимых
@@ -51,14 +54,18 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621m = () => {
         предупреждающая надпись "OL" и издается прерывистый звуковой сигнал.
       </p>
       <p>
-        Дозиметры ДКГ-РМ1621 и ДКГ-РМ1621А оснащены энергонезависимой памятью, в
-        которой сохраняется до 1000 событий истории измерений мощности дозы,
-        величины накопленной дозы, случаев и уровней превышения установленных
-        порогов сигнализации. Используя инфракрасный (ИК) канал связи,
-        информация из энергонезависимой памяти прибора может быть передана в
-        персональный компьютер для дальнейшей обработки и анализа, а также
-        представления в виде соответствующих баз данных в рамках системы
-        контроля и учета доз облучения персонала.
+        Дозиметры ДКГ-РМ1621 и{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621a">
+          ДКГ-PM1621А,
+        </Link>{' '}
+        оснащены энергонезависимой памятью, в которой сохраняется до 1000
+        событий истории измерений мощности дозы, величины накопленной дозы,
+        случаев и уровней превышения установленных порогов сигнализации.
+        Используя инфракрасный (ИК) канал связи, информация из энергонезависимой
+        памяти прибора может быть передана в персональный компьютер для
+        дальнейшей обработки и анализа, а также представления в виде
+        соответствующих баз данных в рамках системы контроля и учета доз
+        облучения персонала.
       </p>
       <p>
         Герметичный, ударопрочный корпус позволяет использовать приборы в
@@ -67,7 +74,17 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621m = () => {
         освещения.
       </p>
 
-      <h2>Дозиметры ДКГ-PM1621M и ДКГ-PM1621MA</h2>
+      <h2>
+        Дозиметры{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621m">
+          ДКГ-PM1621M,
+        </Link>{' '}
+        и{' '}
+        <Link to="/catalog/x-ray-and-gamma-radiation-dosimeters/personal-dosimeters/x-ray-and-gamma-radiation-personal-dosimeter-rm1621ma">
+          ДКГ-PM1621MA,
+        </Link>
+        ДКГ-PM1621MA
+      </h2>
       <p>
         В дополнение к функциям дозиметров ДКГ-РМ1621/РМ1621A, модификации
         ДКГ-РМ1621М и ДКГ-РМ1621МА имеют дополнительный поисковый режим и
@@ -87,7 +104,9 @@ export const xRayAndGammaRadiationPersonalDosimeterRm1621m = () => {
   );
   const characteristics = {
     ['Детектор']: <span>счетчик Гейгера-Мюллера</span>,
-    ['Диапазон измерения МЭД']: <span>от 0,1 мкЗв/ч до 1,00 Зв/ч</span>,
+    ['Диапазон измерения МЭД']: (
+      <span>от от 0,1 мкЗв/ч до 100 мЗв/ч или 0,1 Зв/ч</span>
+    ),
     ['Диапазон измерения ЭД']: <span>от 1,0 мкЗв до 9,99 Зв</span>,
     ['Диапазон индикации ЭД']: <span>от 0,01 мкЗв до 9,99 Зв</span>,
     ['Пределы допускаемой основной относительной погрешности измерения МЭД']: (

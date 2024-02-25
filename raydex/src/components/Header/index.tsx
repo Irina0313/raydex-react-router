@@ -32,6 +32,19 @@ const HeaderComponent = () => {
             <Logo />
             <div />
           </div>
+          <Menu
+            className={styles.menu}
+            theme="light"
+            mode="horizontal"
+            defaultSelectedKeys={['']}
+            items={pages.map((page) => {
+              const key = page.key;
+              return {
+                key,
+                label: <Link to={`/${page.key}`}>{page.name}</Link>,
+              };
+            })}
+          />
           <Flex gap="middle" vertical className={styles.contacts}>
             <Link to="tel:+77072008360" aria-label="tel:+77072008360">
               <Flex gap="small" align="center">
@@ -50,20 +63,6 @@ const HeaderComponent = () => {
             </Link>
           </Flex>
         </div>
-
-        <Menu
-          className={styles.menu}
-          theme="light"
-          mode="horizontal"
-          defaultSelectedKeys={['']}
-          items={pages.map((page) => {
-            const key = page.key;
-            return {
-              key,
-              label: <Link to={`/${page.key}`}>{page.name}</Link>,
-            };
-          })}
-        />
       </Flex>
       <div
         className={`${styles.burgerMenu} ${

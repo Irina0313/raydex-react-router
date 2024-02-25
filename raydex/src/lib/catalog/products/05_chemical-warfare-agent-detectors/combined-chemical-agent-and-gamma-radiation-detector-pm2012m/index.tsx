@@ -72,8 +72,7 @@ export const combinedChemicalAgentAndGammaRadiationDetectorPm2012m = () => {
         <li>два сегмента - от 100 до 124;</li>
         <li>три сегмента – от 125 и выше.</li>
       </ul>
-      <h2>Модификации</h2>
-      <p>БДН подключается к БДОИ/БОИ или ПК по интерфейсу RS-485 или USB</p>
+
       <strong>ДКГ-РМ2012М</strong>
       <p> – базовая модификация.</p>
 

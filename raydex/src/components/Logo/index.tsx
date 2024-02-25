@@ -4,7 +4,10 @@ import styles from './logo.module.scss';
 const Logo = () => {
   return (
     <Link to={'/'} className={styles.logoLink}>
-      <img src="/Raydex_logo.png" alt="Logo image" />
+      <img src="/logo.png" alt="Logo image" />
+      <span className={styles.logoText}>
+        ключ к вашей радиационной безопасности
+      </span>
     </Link>
   );
 };
