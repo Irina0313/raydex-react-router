@@ -47,6 +47,7 @@ export const Usage = () => {
                 id: `${i.key}`,
                 label: `${i.name}`,
                 key: i.key,
+                onClick: () => setActiveTab(i.key),
                 children: <Outlet />,
               };
             })}

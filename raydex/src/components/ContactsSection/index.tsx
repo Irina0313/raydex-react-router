@@ -1,4 +1,4 @@
-import { Button, Card, Flex, Modal } from 'antd';
+import { /*  Button, Card, Flex, */ Modal } from 'antd';
 import styles from './styles.module.scss';
 import { useState } from 'react';
 import ContactForm from '../../components/forms/contactForm';
@@ -7,9 +7,9 @@ import MapWidget from './map';
 export const ContactsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const showModal = () => {
+  /* const showModal = () => {
     setIsModalOpen(true);
-  };
+  }; */
 
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -29,7 +29,7 @@ export const ContactsSection = () => {
             <MapWidget />
           </div>
 
-          <Card className={styles.cardContainer} hoverable>
+          {/*  <Card className={styles.cardContainer} hoverable>
             <Flex vertical gap="large">
               <Flex vertical gap="middle">
                 <h2>Свяжитесь с нами</h2>
@@ -55,7 +55,7 @@ export const ContactsSection = () => {
                 </Button>
               </Flex>
             </Flex>
-          </Card>
+          </Card> */}
         </div>
       </div>
 

@@ -12,7 +12,7 @@ const FooterComponent = () => {
   return (
     <Footer className={styles.footer}>
       <Flex gap="middle" justify="space-between" className="wrapper">
-        <Link to="https://ru.linkedin.com/">
+        <Link to="https://www.linkedin.com/company/raydex/">
           <LinkedinOutlined style={{ fontSize: '2em' }} />
         </Link>
         <Flex gap="middle" vertical>

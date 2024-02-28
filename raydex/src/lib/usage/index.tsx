@@ -1,4 +1,4 @@
-import { Flex, Typography } from 'antd';
+import { Flex, Typography, Image } from 'antd';
 
 import { Link } from 'react-router-dom';
 
@@ -73,7 +73,10 @@ export const usageDescription = (areaKey: string) => {
             дозиметрические величины:
           </Typography.Paragraph>
           <div style={{ maxWidth: '1000px' }}>
-            <img src="../../../../../.././assets/usage/y2fivslo1r1o7r0beain6pvfl4tfit6q.webp"></img>
+            <Image
+              style={{ width: '80vw' }}
+              src="../../../../../.././assets/usage/y2fivslo1r1o7r0beain6pvfl4tfit6q.webp"
+            />
           </div>
 
           <Typography.Paragraph>

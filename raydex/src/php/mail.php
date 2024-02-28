@@ -5,12 +5,15 @@ require 'phpmailer/Exception.php';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
 $mail =new PHPMailer\PHPMailer\PHPMailer();
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
+
 
 $mail->SMTPDebug = 2;                               // Enable verbose debug output
 
@@ -34,8 +37,12 @@ $mail->addAddress('info@raydexkz.com');     // Кому будет уходит�
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
+
+
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил сообщение, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Body    = "<b>Имя:</b> $name <br>
+        <b>Почта:</b> $email<br><br>
+        <b>Сообщение:</b><br>$message";
 $mail->AltBody = '';
 
 if(!$mail->send()) {

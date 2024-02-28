@@ -30,14 +30,14 @@ interface FieldType {
 }
 
 const ContactForm = () => {
-  const [form] = Form.useForm();
-  const formAction = '../../../php/mail.php';
+  //const [form] = Form.useForm();
+  const formAction = '../php/mail.php';
 
   const onFinish = async (values: unknown) => {
-    console.log('Success:', values);
+    console.log('Success11:', JSON.stringify(values));
 
     // Update the form action dynamically
-    form.submit();
+    // form.submit();
 
     try {
       // Send form data to the server using fetch

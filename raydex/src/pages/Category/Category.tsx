@@ -22,12 +22,17 @@ export const Category = ({ handleProductPage }: ICategoryParams) => {
 
   return (
     <>
-      <Flex wrap='wrap' gap={50} justify='center'>
+      <Flex
+        wrap="wrap"
+        gap={50}
+        justify="center"
+        style={{ margin: '0 0 30px 0' }}
+      >
         {subcategory && (
-          <ProductCard category={subcategory} imagePathPrefix='../' />
+          <ProductCard category={subcategory} imagePathPrefix="../" />
         )}
         {productsID && (
-          <ProductCard category={currCategoryProducts} imagePathPrefix='../' />
+          <ProductCard category={currCategoryProducts} imagePathPrefix="../" />
         )}
       </Flex>
     </>
