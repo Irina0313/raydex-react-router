@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductCard from '../../components/ProductCard';
 import { catalog } from '../../lib/catalog/catalog';
@@ -15,7 +16,9 @@ interface IProductsParams {
 }
 
 export const Products = ({ handleProductPage }: IProductsParams) => {
-  handleProductPage(false);
+  useEffect(() => {
+    handleProductPage(false);
+  }, []);
   const params = useParams();
   const category = catalog.filter((p) => p.path === params.category)[0];
   const subcategory = category.subcategory?.filter(

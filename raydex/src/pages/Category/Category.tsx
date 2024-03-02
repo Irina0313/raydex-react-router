@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Flex } from 'antd';
 
 import { useParams } from 'react-router-dom';
@@ -10,7 +11,9 @@ interface ICategoryParams {
 }
 
 export const Category = ({ handleProductPage }: ICategoryParams) => {
-  handleProductPage(false);
+  useEffect(() => {
+    handleProductPage(false);
+  }, []);
   const params = useParams();
 
   const currCategory = catalog.filter((p) => p.path === params.category)[0];

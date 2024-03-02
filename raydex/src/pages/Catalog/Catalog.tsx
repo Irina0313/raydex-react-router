@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Card, Flex, Layout } from 'antd';
 
 import { Link } from 'react-router-dom';
@@ -59,7 +60,9 @@ interface ICatalogParams {
   handleProductPage: (param: boolean) => void;
 }
 const Catalog = ({ isProductPage, handleProductPage }: ICatalogParams) => {
-  handleProductPage(false);
+  useEffect(() => {
+    handleProductPage(false);
+  }, []);
 
   const location = useLocation();
   // console.log("location", location.pathname, "params", params);
