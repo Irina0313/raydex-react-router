@@ -17,7 +17,6 @@ interface IProductsParams {
 export const Products = ({ handleProductPage }: IProductsParams) => {
   handleProductPage(false);
   const params = useParams();
-  console.log('Products');
   const category = catalog.filter((p) => p.path === params.category)[0];
   const subcategory = category.subcategory?.filter(
     (s) => s.path === params.products
@@ -31,7 +30,7 @@ export const Products = ({ handleProductPage }: IProductsParams) => {
       {subcategory && (
         <div style={wrapperStyle}>
           {products && (
-            <ProductCard category={products} imagePathPrefix='../../' />
+            <ProductCard category={products} imagePathPrefix="../../" />
           )}
         </div>
       )}

@@ -7,6 +7,7 @@ import {
 } from './products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 import { personalDosimetrs } from './products/01_XRayAndGammaRadiationDosimeters/PersonalDosimeters';
 import { prdGamma } from './products/02_personal-radiation-detectors/PrdGamma';
+import { prdGammaNeutron } from './products/02_personal-radiation-detectors/PrdGammaNeutron';
 import { radionuclideIdentificationDevices } from './products/03_radionuclideIdentificationDevices/RadionuclideIdentificationDevices';
 import { smartProbes } from './products/04_smart-probes/SmartProbes';
 import { chemicalWarfareAgentDetectors } from './products/05_chemical-warfare-agent-detectors/ChemicalWarfareAgentDetectors';
@@ -26,10 +27,10 @@ export const productsList: IProductsListItem[] = [
     id: 'personalDosimetrs',
     value: personalDosimetrs,
   },
-  /*  {
+  {
     id: 'prdGammaNeutron',
     value: prdGammaNeutron,
-  }, */
+  },
   {
     id: 'prdGamma',
     value: prdGamma,
@@ -96,12 +97,12 @@ export const catalog: CatalogItemType[] = [
     path: 'personal-radiation-detectors',
     name: 'Поисковые приборы радиационного контроля',
     subcategory: [
-      /* {
+      {
         id: 'sub3',
         path: 'prd-gamma-neutron',
         name: 'Поисковые приборы гамма и нейтронного излучения',
         productsID: 'prdGammaNeutron',
-      }, */
+      },
       {
         id: 'sub4',
         path: 'prd-gamma',

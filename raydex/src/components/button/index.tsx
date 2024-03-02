@@ -27,7 +27,7 @@ const CustomButton = ({ text, htmlType, handleClick }: ICustomButtonProps) => {
 
   return (
     <Button
-      type='primary'
+      type="primary"
       htmlType={htmlType || undefined}
       style={buttonStyle}
       onMouseEnter={hoverHandler}

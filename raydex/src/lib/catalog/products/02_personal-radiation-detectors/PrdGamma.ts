@@ -3,29 +3,6 @@ import getFullCharacteristics from '../../../../utils/getFullCharacteristics';
 import getDocs from '../../../../utils/getDocs';
 import { ProductItemType } from '../01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 
-/* interface TabsType {
-  description?: string;
-  characteristics?: string;
-  docs?: string;
-} */
-
-/* export interface ProductItemType {
-  id: string;
-  name: string;
-  path: string;
-  code: string;
-  images: string[];
-
-  status: string;
-  shortDescription: JSX.Element | string;
-  fullDescription: JSX.Element;
-  sliderDescription?: string;
-  tabs: TabsType;
-  characteristics?: JSX.Element;
-  fullCharacteristics?: JSX.Element;
-  docs?: JSX.Element;
-} */
-
 export const prdGamma: ProductItemType[] = [
   {
     id: 'gamma-personal-radiation-detector-pm1401ma',

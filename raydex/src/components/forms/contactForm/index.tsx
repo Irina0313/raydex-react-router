@@ -1,4 +1,4 @@
-import { Form, Input } from 'antd';
+import { Form, Input, message } from 'antd';
 
 import styles from './contactForm.module.scss';
 import CustomButton from '../../button';
@@ -15,10 +15,6 @@ const formItemLayout = {
   },
 };
 
-const onFinishFailed = (errorInfo: unknown) => {
-  console.log('Failed:', errorInfo);
-};
-
 interface FieldType {
   company?: string;
   surname?: string;
@@ -27,37 +23,48 @@ interface FieldType {
   email: string;
   middleName?: string;
   message?: string;
+  defaultValue?: string;
 }
 
-const ContactForm = () => {
-  //const [form] = Form.useForm();
-  const formAction = '../php/mail.php';
+interface ContactFormInterface {
+  handleCancel: () => void;
+  product?: string | null;
+}
 
-  const onFinish = async (values: unknown) => {
-    console.log('Success11:', JSON.stringify(values));
+const ContactForm = ({ handleCancel, product }: ContactFormInterface) => {
+  const [form] = Form.useForm();
+  const formAction = '/php/mail.php';
 
-    // Update the form action dynamically
-    // form.submit();
-
+  const onFinish = async (values: FieldType) => {
     try {
-      // Send form data to the server using fetch
-      const response = await fetch(formAction, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
+      const formData = new FormData();
+
+      Object.entries(values).forEach(([key, value]) => {
+        const valueForSend = value || '';
+        formData.append(key, valueForSend);
       });
 
-      // Check if the request was successful (status code 200-299)
+      const response = await fetch(formAction, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
       if (response.ok) {
-        // Additional logic after successful form submission
-        console.log('Form submitted successfully!');
+        form.resetFields();
+        handleCancel();
+        message.success('Заявка успешно отправлена');
       } else {
-        console.error('Failed to submit form:', response.statusText);
+        handleCancel();
+        message.error(
+          'Произошла ошибка при отправке заявки, попробуйте еще раз'
+        );
       }
     } catch (e) {
-      console.error('Error submitting form:', e);
+      console.error('Ошибка при отправке формы:', e);
+      message.error('Произошла ошибка при отправке формы, попробуйте еще раз');
     }
   };
 
@@ -69,13 +76,13 @@ const ContactForm = () => {
         ближайшее время.
       </p>
       <Form
+        form={form}
         name="contactForm"
         method="POST"
         action={formAction}
         style={{ maxWidth: 600 }}
         initialValues={{ remember: true }}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
         autoComplete="off"
         {...formItemLayout}
       >
@@ -135,6 +142,7 @@ const ContactForm = () => {
         <Form.Item<FieldType>
           label="Вопрос"
           name="message"
+          initialValue={`Прибор: ${product}` || ''}
           rules={[{ required: true, message: 'Пожалуйста, введите вопрос' }]}
         >
           <TextArea rows={4} />

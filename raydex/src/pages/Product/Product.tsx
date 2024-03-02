@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Collapse, Tabs } from 'antd';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import styles from './styles.module.scss';
@@ -11,7 +11,9 @@ interface IProductParams {
 }
 
 export const Product = ({ handleProductPage }: IProductParams) => {
-  handleProductPage(true);
+  useEffect(() => {
+    handleProductPage(true);
+  }, []);
   const params = useParams();
 
   const { product, products } = params;

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Card, Modal } from 'antd';
 import ContactForm from '../forms/contactForm';
 
-//import CustomButton from '../button';
+import CustomButton from '../button';
 import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 
 import { findPathByName } from '../../utils/getFullPath';
@@ -21,10 +21,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
   category = [],
   imagePathPrefix = '',
 }) => {
+  const [selectedProduct, setSelectedProduct] = useState<string | undefined>();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  /* const showModal = () => {
+  const showModal = (value: string | undefined) => {
+    setSelectedProduct(value);
     setIsModalOpen(true);
-  }; */
+  };
 
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -72,14 +74,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
                   }
                   /*  description={`${p.status}`} */
                 />
-                {/* <div style={{ margin: '10px 0 0 0' }}>
-                  <CustomButton text="Заказать" handleClick={showModal} />
-                </div> */}
+                <div style={{ margin: '10px 0 0 0' }}>
+                  <CustomButton
+                    text="Заказать"
+                    handleClick={() => showModal(p.name)}
+                  />
+                </div>
               </Card>
             )
         )}
       <Modal open={isModalOpen} styles={modalStyles} onCancel={handleCancel}>
-        <ContactForm />
+        <ContactForm handleCancel={handleCancel} product={selectedProduct} />
       </Modal>
     </>
   );

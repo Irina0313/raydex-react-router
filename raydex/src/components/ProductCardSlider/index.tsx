@@ -44,7 +44,7 @@ export default function ProductCardSwiper({
         }}
       >
         {images.map((p) => (
-          <SwiperSlide>
+          <SwiperSlide key={p}>
             <img
               src={`${imagePathPrefix}${p}`}
               style={{
