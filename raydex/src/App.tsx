@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Layout } from './components/Layout';
 import Catalog from './pages/Catalog/Catalog';
+import { Usage } from './pages/Usage';
+import { UsageArea } from './pages/UsageArea';
 import * as pages from './pages';
 import { useState } from 'react';
 
@@ -40,8 +42,8 @@ function App() {
           path="catalog/:category/:products/:product"
           element={<pages.Product handleProductPage={handleProductPage} />}
         />
-        <Route path="usage" element={<pages.Usage />}>
-          <Route path=":area" element={<pages.UsageArea />} />
+        <Route path="usage" element={<Usage />}>
+          <Route path=":area" element={<UsageArea />} />
         </Route>
       </Route>
     </Routes>
