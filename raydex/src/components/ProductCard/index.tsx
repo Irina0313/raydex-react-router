@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Card, Modal } from 'antd';
 import ContactForm from '../forms/contactForm';
 
-import CustomButton from '../button';
+//import CustomButton from '../button';
 import { ProductItemType } from '../../lib/catalog/products/01_XRayAndGammaRadiationDosimeters/ElectronicDosimeters';
 
 import { findPathByName } from '../../utils/getFullPath';
@@ -22,9 +22,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imagePathPrefix = '',
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const showModal = () => {
+  /* const showModal = () => {
     setIsModalOpen(true);
-  };
+  }; */
 
   const handleCancel = () => {
     setIsModalOpen(false);
