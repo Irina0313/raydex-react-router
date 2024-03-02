@@ -68,7 +68,7 @@ export const contrabandDetectorPm2030 = () => {
 
       <Image
         width={400}
-        src="../../../../../../public/assets/productsImages/contraband-detector/contraband-detector-pm2030/images/schema.jpg"
+        src="../../../../../.././assets/productsImages/contraband-detector/contraband-detector-pm2030/images/schema.jpg"
       />
 
       <h2>Характеристики в режиме досмотра</h2>
