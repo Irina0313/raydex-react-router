@@ -57,7 +57,7 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/promotionalMaterials/_PM1401K-3_PM1401К-3 Leaflet (2023.10 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/_PM1401K-3_PM1401К-3 Leaflet (2023.10 RU).pdf',
       ],
       certificates: [
         {
@@ -112,7 +112,7 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 RU).pdf',
       ],
       certificates: [
         {
@@ -157,7 +157,7 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radionuclide-identification-devices/gamma-radiation-detector-bdg3-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/gamma-radiation-detector-bdg3-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 RU).pdf',
       ],
     }),
   },

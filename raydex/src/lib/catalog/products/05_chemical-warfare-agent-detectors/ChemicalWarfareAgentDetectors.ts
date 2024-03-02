@@ -38,7 +38,7 @@ export const chemicalWarfareAgentDetectors: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 RU).pdf',
       ],
       certificates: [
         {
@@ -102,7 +102,7 @@ export const chemicalWarfareAgentDetectors: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012mb/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012mb/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 RU).pdf',
       ],
       certificates: [
         {

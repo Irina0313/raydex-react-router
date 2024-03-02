@@ -34,7 +34,7 @@ export const pedestrianAndLuggage: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p/promotionalMaterials/_PM5000P_PM5000P Leaflet.pdf',
+        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p/promotionalMaterials/_PM5000P_RM5000P_ru.pdf',
       ],
     }),
   },
@@ -64,7 +64,7 @@ export const pedestrianAndLuggage: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-01/promotionalMaterials/_PM5000P_PM5000P Leaflet.pdf',
+        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-01/promotionalMaterials/_PM5000P_PM5000P Leaflet (2022.11 RU).pdf',
       ],
     }),
   },
@@ -94,7 +94,7 @@ export const pedestrianAndLuggage: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-02b/promotionalMaterials/_PM5000P_PM5000P Leaflet.pdf',
+        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-02b/promotionalMaterials/_PM5000P_PM5000P Leaflet (2022.11 RU).pdf',
       ],
     }),
   },
@@ -124,7 +124,7 @@ export const pedestrianAndLuggage: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-03b/promotionalMaterials/_PM5000P_PM5000P Leaflet.pdf',
+        '../../../assets/productsImages/radiation-portal-monitors/pedestrian-and-luggage/radiation-monitor-pm5000p-03b/_PM5000P_PM5000P Leaflet (2022.11 RU).pdf',
       ],
     }),
   },

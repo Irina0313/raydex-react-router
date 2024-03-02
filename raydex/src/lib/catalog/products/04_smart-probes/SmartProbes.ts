@@ -37,7 +37,7 @@ export const smartProbes: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/smart-probes/gamma-radiation-detection-unit-bdg2-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/smart-probes/gamma-radiation-detection-unit-bdg2-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 RU).pdf',
       ],
     }),
   },
@@ -70,7 +70,7 @@ export const smartProbes: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/smart-probes/neutron-radiation-detector-bdn-for-pm14033/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/smart-probes/neutron-radiation-detector-bdn-for-pm14033/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 RU).pdf',
       ],
     }),
   },
@@ -104,7 +104,7 @@ export const smartProbes: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/smart-probes/alpha-beta-radiation-detector-bdab-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/smart-probes/alpha-beta-radiation-detector-bdab-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 RU).pdf',
       ],
     }),
   },

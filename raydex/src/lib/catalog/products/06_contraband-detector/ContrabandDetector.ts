@@ -36,7 +36,7 @@ export const contrabandDetector: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/contraband-detector/contraband-detector-pm2030/promotionalMaterials/_PM2030_PM2030 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/contraband-detector/contraband-detector-pm2030/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 RU).pdf',
       ],
       certificates: [
         {

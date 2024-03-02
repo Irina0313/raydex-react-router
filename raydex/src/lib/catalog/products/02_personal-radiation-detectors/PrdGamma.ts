@@ -36,7 +36,7 @@ export const prdGamma: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 RU).pdf',
       ],
       certificates: [
         {

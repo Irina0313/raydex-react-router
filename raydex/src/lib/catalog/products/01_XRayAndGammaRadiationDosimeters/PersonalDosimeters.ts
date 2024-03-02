@@ -119,7 +119,7 @@ export const personalDosimetrs: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-rm1621/promotionalMaterials/_PM1621_PM1621 Leaflet.pdf',
+        '../../../assets/productsImages/x-ray-and-gamma-radiation-dosimeters/personalDosimetrs/x-ray-and-gamma-radiation-personal-dosimeter-rm1621/promotionalMaterials/_PM1621_PM1621 Leaflet (2022.11 RU).pdf',
       ],
       certificates: [
         {

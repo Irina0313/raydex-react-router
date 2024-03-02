@@ -173,7 +173,7 @@ export const electronicDosimetrs: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/x-ray-and-gamma-radiation-dosimeters/electronicDosimetrs/wrist-gamma-dosimeter-rm1603a/promotionalMaterials/_PM1603_PM1603 Leaflet.pdf ',
+        '../../../assets/productsImages/x-ray-and-gamma-radiation-dosimeters/electronicDosimetrs/wrist-gamma-dosimeter-rm1603a/promotionalMaterials/_PM1603_PM1603 Leaflet (2024.02 RU).pdf',
       ],
       certificates: [
         {

@@ -1,5 +1,5 @@
 import { automaticIrradiationCalibrationSystemPm9200 } from './automatic-irradiation-calibration-system-pm9200/index';
-import { automaticIrradiationCalibrationSystemPm9101 } from './automatic-irradiation-calibration-system-pm9101/index';
+//import { automaticIrradiationCalibrationSystemPm9101 } from './automatic-irradiation-calibration-system-pm9101/index';
 import { automaticIrradiationCalibrationSystemPm9100 } from './automatic-irradiation-calibration-system-pm9100/index';
 import { pm9300 } from './pm9300';
 
@@ -40,7 +40,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9100/promotionalMaterials/_PM9100_PM9100 Leaflet.pdf',
+        '../../../assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9100/promotionalMaterials/_PM9100_PM9100 Leaflet (2022.11 RU).pdf',
       ],
       certificates: [
         {
@@ -62,7 +62,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
       ],
     }),
   },
-  {
+  /* {
     id: 'automatic-irradiation-calibration-system-pm9101',
     name: 'Установка дозиметрическая гамма-излучения автоматизированная УДГА-РМ9101',
     path: 'automatic-irradiation-calibration-system-pm9101',
@@ -115,7 +115,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
         },
       ],
     }),
-  },
+  }, */
   {
     id: 'automatic-irradiation-calibration-system-pm9200',
     name: 'Установка радиационная поверочная нейтронного излучения серии УРПН-РМ9200',
@@ -151,7 +151,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/promotionalMaterials/_PM9200_PM9200 Leaflet.pdf',
+        '../../../assets/productsImages/gamma-radiation-calibration-equipment/automatic-irradiation-calibration-system-pm9200/promotionalMaterials/_PM9200_PM9200 Leaflet (2022.11 RU).pdf',
       ],
       certificates: [
         {
@@ -200,7 +200,7 @@ export const gammaRadiationCalibrationEquipment: ProductItemType[] = [
     fullCharacteristics: getFullCharacteristics(pm9300().characteristics),
     docs: getDocs({
       promotionalMaterials: [
-        '../../../assets/productsImages/gamma-radiation-calibration-equipment/pm9300/promotionalMaterials/_PM9300_PM9300 Leaflet (2023.03 EN).pdf',
+        '../../../assets/productsImages/gamma-radiation-calibration-equipment/pm9300/_PM9300_PM9300 Leaflet (2024.02 RU).pdf',
       ],
       certificates: [
         {
