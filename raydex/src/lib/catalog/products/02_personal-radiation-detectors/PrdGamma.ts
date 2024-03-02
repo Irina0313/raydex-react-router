@@ -36,17 +36,17 @@ export const prdGamma: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        './assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/certificates/_PM1401_Сертификат_УТСИ_РБ_РМ1401К-01М_до_08.04.2027.pdf',
+          path: '../../../assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/certificates/_PM1401_Сертификат_УТСИ_РБ_РМ1401К-01М_до_08.04.2027.pdf',
           title: 'Сертификат УТСИ РБ',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/certificates/_PM1401_1401М_ТР_ТС_020_до_16.05.2023_(А).pdf',
+          path: '../../../assets/productsImages/personal-radiation-detectors/prd-gamma/gamma-personal-radiation-detector-pm1401ma/certificates/_PM1401_1401М_ТР_ТС_020_до_16.05.2023_(А).pdf',
           title: 'Сертификат ТР ТС',
         },
 

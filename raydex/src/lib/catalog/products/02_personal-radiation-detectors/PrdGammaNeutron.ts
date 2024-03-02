@@ -31,17 +31,17 @@ export const prdGammaNeutron: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        './assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 RU).pdf',
+        '../../../assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/promotionalMaterials/_PM1401_PM1401 Leaflet (2023.09 RU).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/certificates/_PM1401_Сертификат_УТСИ_РБ_РМ1401К-01М_до_08.04.2027.pdf',
+          path: '../../../assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/certificates/_PM1401_Сертификат_УТСИ_РБ_РМ1401К-01М_до_08.04.2027.pdf',
           title: 'Сертификат УТСИ РБ',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/certificates/_PM1401_1401К-01_ТР_ТС_020_до_17.08.2027.pdf',
+          path: '../../../assets/productsImages/personal-radiation-detectors/prd-gamma-neutron/personal-radiation-detector-pm1401k-01m/certificates/_PM1401_1401К-01_ТР_ТС_020_до_17.08.2027.pdf',
           title: 'Сертификат ТР ТС',
         },
 

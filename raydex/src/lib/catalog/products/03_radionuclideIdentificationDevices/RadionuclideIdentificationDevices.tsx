@@ -57,12 +57,12 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/promotionalMaterials/_PM1401K-3_PM1401К-3 Leaflet (2023.10 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/promotionalMaterials/_PM1401K-3_PM1401К-3 Leaflet (2023.10 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/certificates/_PM1401_1401K_ТР_ТС_020_до_26.01.2025.pdf',
+          path: '../../../assets/productsImages/radionuclide-identification-devices/multipurpose-hand-held-radiation-monitor-identifier-pm1401k-3/certificates/_PM1401_1401K_ТР_ТС_020_до_26.01.2025.pdf',
           title: 'Сертификат ТР ТС',
         },
 
@@ -112,17 +112,17 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/certificates/_PM1403_1403_ТР_ТС_004_020_до_29.10.2024.pdf',
+          path: '../../../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/certificates/_PM1403_1403_ТР_ТС_004_020_до_29.10.2024.pdf',
           title: 'Сертификат ТР ТС',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/certificates/_PM1403_1403_ТР_BY_024_до_30.10.2024.pdf',
+          path: '../../../assets/productsImages/radionuclide-identification-devices/display-and-control-unit-pm1403/certificates/_PM1403_1403_ТР_BY_024_до_30.10.2024.pdf',
           title: 'Сертификат ТР BY',
         },
       ],
@@ -157,7 +157,7 @@ export const radionuclideIdentificationDevices: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/radionuclide-identification-devices/gamma-radiation-detector-bdg3-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/radionuclide-identification-devices/gamma-radiation-detector-bdg3-for-pm1403/promotionalMaterials/_PM1403_PM1403 Leaflet (2023.07 EN).pdf',
       ],
     }),
   },

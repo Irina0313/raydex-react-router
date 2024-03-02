@@ -38,22 +38,22 @@ export const chemicalWarfareAgentDetectors: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_Сертификат_УТСИ_РБ_РМ2012М_до_28.08.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_Сертификат_УТСИ_РБ_РМ2012М_до_28.08.2025.pdf',
           title: 'Сертификат УТСИ РБ',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_ТС_004,_020_до_29.04.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_ТС_004,_020_до_29.04.2025.pdf',
           title: 'Сертификат ТР ТС',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_BY_024_до_30.04.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_BY_024_до_30.04.2025.pdf',
           title: 'Сертификат ТР BY',
         },
 
@@ -102,22 +102,22 @@ export const chemicalWarfareAgentDetectors: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012mb/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
+        '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012mb/promotionalMaterials/_PM2012M_PM2012 Leaflet (2023.09 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_Сертификат_УТСИ_РБ_РМ2012М_до_28.08.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_Сертификат_УТСИ_РБ_РМ2012М_до_28.08.2025.pdf',
           title: 'Сертификат УТСИ РБ',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_ТС_004,_020_до_29.04.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_ТС_004,_020_до_29.04.2025.pdf',
           title: 'Сертификат ТР ТС',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_BY_024_до_30.04.2025.pdf',
+          path: '../../../assets/productsImages/chemical-warfare-agent-detectors/combined-chemical-agent-and-gamma-radiation-detector-pm2012m/certificates/_PM2012M_2012М_ТР_BY_024_до_30.04.2025.pdf',
           title: 'Сертификат ТР BY',
         },
 

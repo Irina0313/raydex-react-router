@@ -36,17 +36,17 @@ export const contrabandDetector: ProductItemType[] = [
     ),
     docs: getDocs({
       promotionalMaterials: [
-        '../assets/productsImages/contraband-detector/contraband-detector-pm2030/promotionalMaterials/_PM2030_PM2030 Leaflet (2023.07 EN).pdf',
+        '../../../assets/productsImages/contraband-detector/contraband-detector-pm2030/promotionalMaterials/_PM2030_PM2030 Leaflet (2023.07 EN).pdf',
       ],
       certificates: [
         {
           type: 'doc',
-          path: './assets/productsImages/contraband-detector/contraband-detector-pm2030/certificates/_PM2030_2030_ТР_ТС_020_до_28.03.2027.pdf',
+          path: '../../../assets/productsImages/contraband-detector/contraband-detector-pm2030/certificates/_PM2030_2030_ТР_ТС_020_до_28.03.2027.pdf',
           title: 'Сертификат ТР ТС',
         },
         {
           type: 'doc',
-          path: './assets/productsImages/contraband-detector/contraband-detector-pm2030/certificates/_PM2030_2030_ТР_BY_024_до_28.03.2027.pdf',
+          path: '../../../assets/productsImages/contraband-detector/contraband-detector-pm2030/certificates/_PM2030_2030_ТР_BY_024_до_28.03.2027.pdf',
           title: 'Сертификат ТР BY',
         },
       ],
